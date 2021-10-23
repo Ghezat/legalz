@@ -1,0 +1,263 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+main{
+    background-color: #131416;
+    height: 100vh;
+}
+
+.header{
+    display: flex;
+    position:sticky;
+    top:0px;
+    width: 100%;
+    height: 82px;
+    background-color: #131416;
+    box-shadow: 2px 4px 3px 1px #e2e2e2;
+    z-index: 100; /*posiciona el elemento arriba de otros */
+}
+
+.marca {
+    margin-top: 1px;
+    margin-left: 60px;
+
+}
+
+.logo{
+    width: 70px;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 80%;
+    
+}
+
+.divIdiom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+.idiom{
+    color: grey;
+    text-decoration: none;
+    
+}
+
+.navID{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(143, 143, 143);
+    height: 50px;
+    margin: 20px 25px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+         
+}
+
+.navID:hover{
+    color: #aaaaaa;
+    border-bottom: 8px solid #914746;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    
+}
+
+.indiceNav{
+    width: 100%;
+    height: 8px;
+    background-color: #e2e2e2;
+ }
+
+.imgFondoZ{
+    background-color: #131416;
+}
+
+
+.imgZ{
+    width: 100%;
+}
+
+.logoLargo{
+    width: 300px;
+    height: 100px;
+}
+
+.bienvenidaZ{
+    display: flex;
+    justify-content: space-around;
+    background-color: #131416;
+    width: 100%;
+    height: auto;
+    
+}
+
+.divBienvenido{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin-top: 20px;
+    width: 25%;
+    height: 180px;
+    position: relative;
+    
+   
+}
+
+.tituloBienv{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #4f4f51;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.descripBienv{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: #4f4f51; 
+    text-align: center;
+    margin: 10px;
+   
+}
+
+.boton{
+    width: 25px;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 30px 60px 30px;
+    background-color: #131416;
+   
+}
+
+.messageEnd{
+    display: flex;
+    justify-content: center;
+    color: #4f4f51;
+    font-size: 18px; 
+    
+}
+
+.messageStart{
+    display: flex;
+    justify-content: center;
+    background-color: slategray;
+    padding: 5px;
+    margin-top: 20px;
+    color: rgb(2, 23, 31);
+    font-size: 18px;
+    
+}
+
+#menuGlobal{
+    position: relative;
+    left: -295px;
+    transition: all 0.5s ease;
+    
+}
+
+#menuGlobal.active{
+    left: 0px;
+}
+
+.menu{
+    width: 320px;
+    height: 100vh;
+    position: relative;
+}
+.btn-Aside{
+    position: absolute;
+    top: 100px;
+    left: 290px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(0deg);
+    cursor: pointer;
+    color: gray;
+    border: 1px solid gray;
+
+}
+.titleMenu{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 15%;
+    top: 120px;
+}
+
+.contenTag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tag{
+    color: white;
+    font-size: 26px;
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+    .nav{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 20px;
+        width: 80%;     
+        
+    }
+
+    .navID{
+        margin: 20px 15px;  
+    }
+    
+    .descripBienv{
+        flex-wrap: nowrap;
+        font-size: 12px;
+        color: #4f4f51; 
+        text-align: center;
+        margin: 5px;
+    }
+
+    .bienvenidaZ{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #131416;
+        width: 100%;
+        height: 700px;
+    }
+    
+    .divBienvenido{
+        margin-top: 10px;
+        width: 60%;
+        height: 180px;   
+    }
+
+    .descripBienv{
+        font-size: 20px;
+    }
+}
