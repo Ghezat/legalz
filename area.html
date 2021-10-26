@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body onload="loadArea()">
+    
     <main>
          <header class="header">
 
@@ -16,25 +17,86 @@
              </div>
 
              <div class="nav">
-                <a href="./index.html" class="navID" > Inicio</a>
-                <a href="./area.html" class="navID" > Areas</a>
-                <a href="./team.html" class="navID" > Equipo</a>
-                <a href="./contac.html" class="navID" > contactanos</a>
+                <a href="./index.html" class="navID" id="navIDInd"> Inicio</a>
+                <a href="./area.html" class="navID" id="navIDAre"> Areas</a>
+                <a href="./team.html" class="navID" id="navIDTea"> Equipo</a>
+                <a href="./contac.html" class="navID" id="navIDCont"> contactanos</a>
              </div>
+
              <div class="divIdiom">
                 <div class="circle"> <a href="./indexen.html"   class="idiom">EN</a></div>
              </div>
 
-         </header>
-         <section class="indiceNav"> </section>
-         <div id="menuGlobal">
-           
-                <img src="./img/arteZ_Aside2.png" alt="" class="menu" >
-                <div><span class="btn-Aside">&#9776;</span></div>  
-                <div class="titleMenu"></div>
-           
-         </div>
-         
+        </header>
+        <section class="indiceNav"> </section>
+
+            <div class="contenedorMayor">
+                <div id="conteIzq">
+                
+                        
+                    <img src="./img/AsideZla.png" alt="" class="menu" >
+                        <div class="MenuGobalInter">
+                            
+                            <div class="sup">
+                                <h3>Area</h3>
+                            </div>
+                            
+                            <div class="inf">
+                                <ul class="listUl">
+                                    <li class= "liCiv" onclick="civil()">Civil</li>
+                                    <li class= "liPen" onclick="penal()" >Penal</li>
+                                    <li class= "liAgr" onclick="agrario()">Agrario</li>
+                                    <li class= "liPro" onclick="proteccion()">Proteccion</li>
+                                    <li class= "liInq" onclick="inquilinato()">Inquilinato</li>
+                                </ul>
+                            </div>
+
+                            <div class="legalZ">
+                                <div class="legal">legal</div> <div class="Z">-Z</div>
+                            </div>    
+                           
+
+                        </div>
+                   
+                </div>
+                <div class="contenedorDerecho">
+                    <section class="conteMedio">
+                        <div class="conteArea">    
+                            <span id="area">area:</span>
+                        </div>    
+                        <div class="conteDerDetails">
+                            <span class = "descrip1"  id="descrip1"></span>
+                            <span class = "descrip2" id="descrip2"></span>
+                            <span class = "descrip3" id="descrip3"></span>
+
+                            <span class = "materia1" id="materia1"></span>
+                            <span class = "materia2" id="materia2"></span>
+                            <span class = "materia3" id="materia3"></span>
+                            <span class = "materia4" id="materia4"></span>
+                            <span class = "materia5" id="materia5"></span>
+                            <span class = "materia6" id="materia6"></span>
+                            <span class = "materia7" id="materia7"></span>
+                            <span class = "materia8" id="materia8"></span>
+                            <span class = "materia9" id="materia9"></span>
+                            <br> <hr> <br>
+
+                            <p> <i>Para mayor información contacte con uno de nuestros abogados pida su cita <a href="">aquí</a> legal-Z - Bufete de abogados. </i></p>
+                            
+
+                        </div> 
+                    </section>
+
+                    <section class="contFinal">
+                        <div>
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9058052921138737"
+                            crossorigin="anonymous"></script>
+                        </div>
+                    </section>
+                </div>    
+               
+
+            </div>    
+
          <footer></footer>
     </main>
     <script src="./main.js"></script>
