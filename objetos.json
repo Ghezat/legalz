@@ -1,0 +1,22 @@
+{
+    "profesores": [{"nombre": "juan", "edad": 40,
+                    "materia" : "fisica"},
+                    {"nombre" : "luis", "edad" : 35,
+                        "materia" : "quimica"},
+                    {"nombre" : "maria", "edad" : 37,
+                        "materia" : "ingles"},
+                    {"nombre" : "george" , "edad" : 26,
+                        "materia" : "edu. fisica"},
+                    {"nombre" : "jose", "edad" : 47,
+                        "materia" : "ingles"},
+                    {"nombre": "said", "edad": 41,
+                        "materia" : "castellano"},
+                    {"nombre" : "luis", "edad" : 35,
+                        "materia" : "geografia"},
+                    {"nombre" : "maria", "edad" : 37,
+                        "materia" : "biologia"},
+                    {"nombre" : "george" , "edad" : 26,
+                        "materia" : "fisica"},
+                    {"nombre" : "gregorio", "edad" : 41,
+                        "materia" : "programacion"}]
+}
