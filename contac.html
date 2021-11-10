@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body onload="loadContac()">
+    
+    <main>
+         <header class="header">
+
+             <div class="marca">
+                 <img src="./img/z1.png" alt="logo" class="logo">
+             </div>
+
+             <div class="nav">
+                <a href="./index.html" class="navID" id="navIDInd"> Inicio</a>
+                <a href="./area.html" class="navID" id="navIDAre"> Areas</a>
+                <a href="./team.html" class="navID" id="navIDTea"> Equipo</a>
+                <a href="./contac.html" class="navID" id="navIDCont"> contactanos</a>
+                <img src="./img/ven.png" alt="" class="flag">
+             </div>
+
+            
+
+        </header>
+        <section class="indiceNav"> </section>
+
+        <div class="contPreload">
+            <div class="lds-ripple" id="preload" ><div></div><div></div></div>
+        </div>  
+
+            <div class="contenedorMayor">
+
+                <div id="conteIzq">
+                
+                        
+                    <img src="./img/AsideZla.png" alt="" class="menu" >
+                        <div class="MenuGobalInter">
+                            
+                            <div class="sup">
+                                <h3>Contacto</h3>
+                            </div>
+                            
+                            <div class="inf">
+                                <ul class="listUl">
+                                    <li class= "liJanu" onclick="janu()">Janury</li>
+                                    <li class= "liCele" onclick="cele()" >Celesvina</li>
+                                    <li class= "liMore" onclick="more()">Jose Moreno</li>
+                                    <li class= "liJose" onclick="jose()" >Jose Enrique</li>
+                                    <li class= "liYbra" onclick="ybra()">Ybrahin Ibarra</li>
+                                    <li class= "liAdmi" onclick="admi()">Administrador</li>
+                                                                    
+                                </ul>
+                            </div>
+
+                            <div class="legalZ">
+                                <div class="legal">legal</div> <div class="Z">-Z</div>
+                            </div>    
+                           
+
+                        </div>
+                   
+                </div>
+                <div class="contenedorDerecho">
+
+                    
+                    <section class="loadIni">
+                        <img src="./img/undraw_New.png" alt="" class= "imgContac">
+                    </section>
+                 
+
+                    <section class="conteMedioContact">
+                            <div class="conteArea">    
+                                <span id="area">Contactos</span>
+                            </div>    
+                        
+
+                            <div class="contForm" id="idForm">
+                                <form action="https://formsubmit.co/scorpinosred@gmail.com"  method = "POST" class="form">
+                                    <div class="conjunto"> 
+                                        <input type="text"  name="name"  class="inpu" placeholder="intro your name" id="name" required>
+                                    </div>
+                                    <div class="conjunto"> 
+                                        <input type="email"  name="email" class="inpu"  placeholder="intro your email"  id="correo" required>
+                                    </div>
+                                    <div class="conjunto"> 
+                                        <textarea name="information" cols="0" rows="5" class="inpuTextarea"  placeholder="intro your message" id="mensag" required></textarea>
+                                    </div>
+                                    <input type = "hidden" name = "_cc" value = "scorpinosred@gmail">
+                                    <input type = "hidden" name = "_next" value = "http://127.0.0.1:5500/send.html">
+                                    <div class="contButton">
+                                    <input type="submit" value="send" class="button">
+                                    </div>
+                                </form>
+                                <div class="formDetails">
+                                    <p id="menssPersonal">mensaje personal del abogado</p>
+                                    <p id="menssGeneral">Al ingresar los datos (nombre y correo) y hacer clic en el botón "Enviar", usted proporciona su firma electrónica y su consentimiento para que el abogado pueda comunicarse con usted, proporcionandole información para el desarrollo de su defenza o caso. </p>                                
+                                </div>
+
+                            </div>
+
+                            <br> <hr> <br>
+                            <p> <i>Para mayor información contacte con uno de nuestros abogados pida su cita <a href="">aquí</a> legal-Z - Bufete de abogados. </i></p>
+                            
+
+                       
+                    </section>
+
+                    <section class="contFinal">
+                        <div>
+                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9058052921138737"
+                            crossorigin="anonymous"></script>
+                        </div>
+                    </section>
+
+                </div>    
+               
+
+            </div>    
+
+         <footer></footer>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

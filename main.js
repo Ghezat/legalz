@@ -46,16 +46,23 @@ function loadArea(){
    load = document.getElementById('navIDAre').style.cssText = 'border-bottom: 4px solid #9e3a0e';
    document.querySelector('.contenedorMayor').style.cssText = 'display : block; display : flex';
    document.querySelector('.contPreload').style.cssText = 'display : none'
-   document.querySelector('.contenedorDerecho').style.cssText = 'display : block;'
+   document.querySelector('.contenedorDerecho').style.cssText = 'display : block; display : flex'
 
 }
 
 function loadTeam(){
-   equipoTeam()
+   todosTeam()
    load = document.getElementById('navIDTea').style.cssText = 'border-bottom: 4px solid #9e3a0e';
    document.querySelector('.contenedorMayor').style.cssText = 'display : block; display : flex';
    document.querySelector('.contPreload').style.cssText = 'display : none'
-   document.querySelector('.contenedorDerecho').style.cssText = 'display : block;' 
+   document.querySelector('.contenedorDerecho').style.cssText = 'display : block; display : flex'
+}
+
+function loadContac(){
+   document.querySelector('.contenedorMayor').style.cssText = 'display : block; display : flex';
+   document.querySelector('.contPreload').style.cssText = 'display : none'
+   document.querySelector('.contenedorDerecho').style.cssText = 'display : block; display : flex'
+   load = document.getElementById('navIDCont').style.cssText = 'border-bottom: 4px solid #9e3a0e'; 
 }
 
 
@@ -250,10 +257,10 @@ function marytierra(){
 
 /*-------------team--------------*/
 
-function equipoTeam(){
+function todosTeam(){
 
    document.getElementById('area').innerHTML = "Nuestro equipo";
-   document.querySelector('.contenedorDerecho').style.cssText = 'display : block'
+   document.querySelector('.contenedorDerecho').style.cssText = 'display : block; display : flex;'
    document.querySelector('.liTea').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liPen').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -379,7 +386,6 @@ function penalTeam(){
   pe6p = document.querySelector('#perfil6')
   pe6p.style.cssText = 'display: none;'
   
-
 
 }
 
@@ -592,6 +598,107 @@ function marytierraTeam(){
 
 
 
+}
 
+
+
+/*-------Contact--------*/
+
+let januMens = 'Hola, soy Janury BabincZuk, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
+let celeMens = 'Hola, soy Celesvina Indriago, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
+let moreMens = 'Hola, soy Jose Argenis Moreno, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
+let joseMens = 'Hola, soy Jose Enrique Bianchi, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
+let ybraMens = 'Hola, soy Ybrahin Ibarra, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
+let admiMens = 'Hola, soy el administrador del sitio, si deseas aparecer en legalz.link debes ser abogado legalmente licenciado en el territorio venezolano y con impre. el costo es pagado anualmente y no excede los $20'
+
+
+function janu(){
+
+  document.querySelector('.loadIni').style.cssText = 'display : none';
+  document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+   document.querySelector('.liJanu').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+   document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liJose').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+
+   document.getElementById('menssPersonal').innerHTML = januMens;
 
 }
+
+function cele(){
+
+   document.querySelector('.loadIni').style.cssText = 'display : none';
+   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+ 
+    document.querySelector('.liCele').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+    document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJose').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+ 
+    document.getElementById('menssPersonal').innerHTML = celeMens;
+ }
+
+ function more(){
+
+   document.querySelector('.loadIni').style.cssText = 'display : none';
+   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+ 
+    document.querySelector('.liMore').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+    document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJose').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+ 
+    document.getElementById('menssPersonal').innerHTML = moreMens;
+ }
+
+ function jose(){
+
+   document.querySelector('.loadIni').style.cssText = 'display : none';
+   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+ 
+    document.querySelector('.liJose').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+    document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+ 
+    document.getElementById('menssPersonal').innerHTML = joseMens;
+ }
+
+ function ybra(){
+
+   document.querySelector('.loadIni').style.cssText = 'display : none';
+   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+ 
+    document.querySelector('.liYbra').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+    document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJose').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+ 
+    document.getElementById('menssPersonal').innerHTML = ybraMens;
+ }
+
+ function admi(){
+
+   document.querySelector('.loadIni').style.cssText = 'display : none';
+   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+ 
+    document.querySelector('.liAdmi').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+    document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJose').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+    document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+ 
+    document.getElementById('menssPersonal').innerHTML = admiMens;
+ }
