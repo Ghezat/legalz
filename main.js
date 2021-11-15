@@ -22,9 +22,12 @@ const descrip1_protf = 'El abogado que asiste en todo lo concerniente al menor y
 const descrip2_protf = 'Hemos unido ambas areas proteccion (del menor, la mujer) y la familia.'                                                                                                                                                                                                                                                                    
 const descrip3_protf = 'A nivel general, un abogado en el area de protección se dedica a las siguientes materias:';
 
-const descrip1_mayti = 'El abogado que cubre y asiste estas areas esta capacitado para a defenza nacional e internacional fijado por el derecho maritimo como el derecho aereo(aereonautico) ambos, ya que una aeronave o nave puede surcar los mares (internacional) o en el caso de una aeronave el aire sobre una nacion (nacion) o espacio internacional, el derecho terrestre abarca el derecho del transporte terrestre la soberania y proteccion de las tierras'   
+const descrip1_mayti = 'El abogado que cubre y asiste estas areas esta capacitado para la defensa nacional e internacional fijado por el derecho maritimo como el derecho aereo(aereonautico) ambos, ya que una aeronave o nave puede surcar los mares (internacional) o en el caso de una aeronave el aire sobre una nacion (nacion) o espacio internacional, el derecho terrestre abarca el derecho del transporte terrestre la soberania y proteccion de las tierras'   
 const descrip2_mayti = 'Hemos unido trea areas Derecho maritimo, Derecho aereo y Derecho terrestre.'                                                                                                                                                                                                                                                                    
 const descrip3_mayti = 'A nivel general, un abogado de derecho maritimo, areo y terrestre se dedica a las siguientes materias:';
+
+
+let emailGrego = "https://formsubmit.co/86035898b13f5772b55eb07468e7ccc9"
 
 const matriz = 
         [{area: 'Derecho Civil', materias : ['• Obligaciones y contratos.', '• Accidentes, indemnizaciones y reclamaciones.', '• Separaciones y divorcios, parejas de hecho.', '• Herencias y sucesiones.', '• Responsabilidad civil y profesional.', '• Derechos de Consumidores y usuarios.', '• Asesoramiento jurídico-legal.', '• Constitucion de Empresas.', '• Reclamaciones por daños morales, daño emergente y lucro cesante.']},
@@ -392,6 +395,7 @@ function penalTeam(){
 
 function agrarioTeam(){
 
+   document.getElementById('area').innerHTML = matriz[2].area;
    document.querySelector('.liAgr').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -432,6 +436,7 @@ function agrarioTeam(){
 
 function tributarioTeam(){   
 
+   document.getElementById('area').innerHTML = matriz[3].area;
    document.querySelector('.liTri').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liAgr').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -473,9 +478,53 @@ function tributarioTeam(){
 }
 
 
+function inmoviliarioTeam(){
+
+   document.getElementById('area').innerHTML = matriz[4].area;
+   document.querySelector('.liInq').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
+   document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liPen').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liAgr').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liPro').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liTri').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+   document.querySelector('.liMyt').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
+
+   civilT = document.querySelector('.conteDerDetailsTeam')
+   civilT.style.cssText = 'flex-direction : column;'
+
+   pe5p = document.querySelector('#perfil1')
+   pe5p.style.cssText = 'display: " ";'
+   document.querySelector('#perDescrip1').style.display = "" 
+ 
+ 
+  pe5p = document.querySelector('#perfil4')
+  pe5p.style.cssText = 'display: none;'
+
+ 
+  pe5p = document.querySelector('#perfil3')
+  pe5p.style.cssText = 'display: none;'
+
+
+  pe5p = document.querySelector('#perfil2')
+  pe5p.style.cssText = 'display: none;'
+
+  
+  pe5p = document.querySelector('#perfil5')
+  pe5p.style.cssText = 'display: none;'
+
+
+  pe5p = document.querySelector('#perfil6')
+  pe5p.style.cssText = 'display: none;'
+
+
+}
+
+
 
 function proteccionTeam(){
 
+   document.getElementById('area').innerHTML = matriz[5].area;
    document.querySelector('.liPro').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -516,49 +565,11 @@ function proteccionTeam(){
 }
 
 
-function inmoviliarioTeam(){
 
-   document.querySelector('.liInq').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
-   document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liPen').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liAgr').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liPro').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liTri').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-   document.querySelector('.liMyt').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
-
-   civilT = document.querySelector('.conteDerDetailsTeam')
-   civilT.style.cssText = 'flex-direction : column;'
-
-   pe5p = document.querySelector('#perfil1')
-   pe5p.style.cssText = 'display: " ";'
-   document.querySelector('#perDescrip1').style.display = "" 
- 
- 
-  pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
-
- 
-  pe5p = document.querySelector('#perfil3')
-  pe5p.style.cssText = 'display: none;'
-
-
-  pe5p = document.querySelector('#perfil2')
-  pe5p.style.cssText = 'display: none;'
-
-  
-  pe5p = document.querySelector('#perfil5')
-  pe5p.style.cssText = 'display: none;'
-
-
-  pe5p = document.querySelector('#perfil6')
-  pe5p.style.cssText = 'display: none;'
-
-
-}
 
 function marytierraTeam(){
 
+   document.getElementById('area').innerHTML = matriz[6].area;
    document.querySelector('.liMyt').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liTea').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liCiv').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -604,18 +615,24 @@ function marytierraTeam(){
 
 /*-------Contact--------*/
 
-let januMens = 'Hola, soy Janury BabincZuk, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
-let celeMens = 'Hola, soy Celesvina Indriago, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
-let moreMens = 'Hola, soy Jose Argenis Moreno, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
-let joseMens = 'Hola, soy Jose Enrique Bianchi, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
-let ybraMens = 'Hola, soy Ybrahin Ibarra, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defenza de derechos humanos. '
-let admiMens = 'Hola, soy el administrador del sitio, si deseas aparecer en legalz.link debes ser abogado legalmente licenciado en el territorio venezolano y con impre. el costo es pagado anualmente y no excede los $20'
+let januMens = 'Hola, soy Janury BabincZuk, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let celeMens = 'Hola, soy Celesvina Indriago, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let moreMens = 'Hola, soy Jose Argenis Moreno, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let joseMens = 'Hola, soy Jose Enrique Bianchi, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let ybraMens = 'Hola, soy Ybrahin Ibarra, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let admiMens = 'Hola, soy el administrador del sitio, si deseas aparecer en legalz.link debes ser abogado legalmente licenciado en el territorio venezolano y aceptar las politicas del sitio.'
 
 
 function janu(){
 
   document.querySelector('.loadIni').style.cssText = 'display : none';
   document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+  document.getElementById('idForm_Janu').style.cssText = 'display : block; display : flex';
+  document.getElementById('idForm_Cele').style.cssText = 'display : none';
+  document.getElementById('idForm_More').style.cssText = 'display : none';
+  document.getElementById('idForm_Admi').style.cssText = 'display : none';
+
 
    document.querySelector('.liJanu').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
    document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -624,14 +641,21 @@ function janu(){
    document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
 
-   document.getElementById('menssPersonal').innerHTML = januMens;
+   document.querySelector('#menssPersonalJanu').innerHTML = januMens;
 
+   console.log( document.querySelector('#menssPersonalJanu').innerHTML = januMens)
 }
 
 function cele(){
 
    document.querySelector('.loadIni').style.cssText = 'display : none';
    document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+   document.getElementById('idForm_Cele').style.cssText = 'display : block; display : flex';
+   document.getElementById('idForm_Janu').style.cssText = 'display : none';
+   document.getElementById('idForm_More').style.cssText = 'display : none';
+   document.getElementById('idForm_Admi').style.cssText = 'display : none';
+   
  
     document.querySelector('.liCele').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -640,13 +664,19 @@ function cele(){
     document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
-    document.getElementById('menssPersonal').innerHTML = celeMens;
+    document.querySelector('#menssPersonalCele').innerHTML = celeMens;
+    console.log(document.querySelector('#menssPersonalCele').innerHTML = celeMens)
  }
 
  function more(){
 
    document.querySelector('.loadIni').style.cssText = 'display : none';
    document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+   document.getElementById('idForm_More').style.cssText = 'display : block; display : flex';
+   document.getElementById('idForm_Janu').style.cssText = 'display : none';
+   document.getElementById('idForm_Cele').style.cssText = 'display : none';
+   document.getElementById('idForm_Admi').style.cssText = 'display : none';
  
     document.querySelector('.liMore').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -655,7 +685,9 @@ function cele(){
     document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
-    document.getElementById('menssPersonal').innerHTML = moreMens;
+    
+    document.querySelector('#menssPersonalMore').innerHTML = admiMens;
+    console.log(document.querySelector('#menssPersonalMore').innerHTML = moreMens)
  }
 
  function jose(){
@@ -692,6 +724,11 @@ function cele(){
 
    document.querySelector('.loadIni').style.cssText = 'display : none';
    document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+   document.getElementById('idForm_Admi').style.cssText = 'display : block; display : flex';
+   document.getElementById('idForm_Janu').style.cssText = 'display : none';
+   document.getElementById('idForm_Cele').style.cssText = 'display : none';
+   document.getElementById('idForm_More').style.cssText = 'display : none';
  
     document.querySelector('.liAdmi').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -700,5 +737,6 @@ function cele(){
     document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
-    document.getElementById('menssPersonal').innerHTML = admiMens;
+    document.querySelector('#menssPersonalAdmi').innerHTML = admiMens;
+    console.log(document.querySelector('#menssPersonalAdmi').innerHTML = admiMens)
  }

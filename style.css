@@ -35,6 +35,7 @@ main{
     justify-content: flex-end;
     align-items: flex-start;
     margin-left: 50px;
+    margin-right: 20px;
     margin-top: 20px;
     width: 80%;
     
@@ -157,7 +158,8 @@ main{
     margin-top: 30px;
     width: 100%;
     background-color: #e2dddd;
-
+    height: auto;
+    
 }
 
 .imgEmail{
@@ -195,7 +197,7 @@ main{
     display: flex;
     width: 100%;
     display: none;
-   
+  
     
 }
 
@@ -207,7 +209,7 @@ main{
 }
 
 #conteIzq{
-    width: 25%;
+    width: 20%;
     left: 0px;
     transition: all 0.5s ease;
     position: relative;
@@ -323,18 +325,14 @@ li:hover{
 
 .contenedorDerecho{
     display: flex;
-    width: 100%;
-    border: 2px solid red;
-   
+    width: 80%;
 }
 
 .contenedorDerechoSend{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    
-  
+    width: 70%;  
 }
 
 .imgSend{
@@ -355,7 +353,6 @@ li:hover{
     display: flex;
     flex-direction: column;
     width: 70%;
-    border: 1px solid orangered;
     
 }
 
@@ -364,18 +361,21 @@ li:hover{
     flex-direction: column;
     display: none;
     width: 70%;
-   
     
 }
 
-.loadIni{
-    width: 70%;
-    
 
+.loadIni{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+   
 }
 
 .imgContac{
-    width: 100%;
+    width: 60%;
+    
   
     
 }
@@ -391,15 +391,19 @@ li:hover{
 .form{
     width: 60%;
     padding: 20px;
-   
+    
 }
 
 .formDetails{
+    display: flex;
+    flex-direction: column;
     width: 35%;
     height: auto;
     padding: 20px 10px;
     border: 2px solid silver;
     border-radius: 4px;
+    overflow-y: auto;
+  
 }   
 
 #menssPersonal{
@@ -480,7 +484,7 @@ li:hover{
     width: 30%;
     height: 100%;
     background-color: wheat;
-   border: 2px solid rgb(101, 160, 14);
+
 }
 
 .conteArea{
@@ -606,7 +610,7 @@ li:hover{
 
 .pdescrip{
     color: rgb(28, 29, 29);
-    
+    overflow-y: auto;
 }
 
 .perfilDetail{
@@ -701,8 +705,6 @@ li:hover{
 @media (min-width: 768px) and (max-width: 1024px) {
    
 
-
-
     .nav{
         display: flex;
         justify-content: flex-end;
@@ -730,6 +732,10 @@ li:hover{
         margin: 5px;
     }
 
+    .emailP{
+        height: auto;
+    }
+
     .bienvenidaZ{
         height: auto;
       }
@@ -741,16 +747,13 @@ li:hover{
         
     }
 
-    
-
-    
-   
-
     .contenedorDerecho{
         display: flex;
         flex-direction: column;
-        width: 80%;
-      
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+     
     }
 
     .conteMedio{
@@ -771,26 +774,88 @@ li:hover{
         width: 100%;
           
     }
+
     #conteIzq{
-        width: 20%;
+        width: 30%;
+        height: 100vh;
+       
      
+    }
+
+    .conteMedioContact{
+        display: flex;
+        flex-direction: column;
+        display: none;
+        width: 100%;
+      
         
     }
+
+    .contForm{
+        height: 65%;
+
+    }
+
+   
+
 }
 
-@media (min-width: 730px) and (max-width: 767px) {
+@media (min-width:414px) and (max-width: 767px) {
+
+    .marca{
+     position: absolute;
+     left: 0px;
+     top: 6px;
+     margin-left: 0;
+        
+    }
+
+    .logo{
+        width: 65px;
+    }
+
+    .nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 0;
+    margin-top: 20px;
+    width: 86%;
+    
+    }
+
+    .navID{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(143, 143, 143);
+        height: 46px;
+        margin: 20px 15px;
+        text-decoration: none;
+        transition: border-bottom 0.3s ease;
+        border: 1px solid transparent;
+    }
+
+    .flag{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 100;
+        position: absolute;
+        top: -13px;
+        left: 55px;
+    }
+
+    .contenedorMayor{
+        height: auto;
+    }
 
     .bienvenidaZ{
       flex-direction: column;
       align-items: center;
-      border: 2px solid violet;
       width: 100%;
       height: auto;
-
     }
 
     .divBienvenido{
-        border: 2px solid orangered;
         width: 80%;
         height: auto;
         justify-content: center;
@@ -803,11 +868,380 @@ li:hover{
     }
 
     .descripBienv{
-       
         font-size: 14px;
         margin: 10px;
         
+    }   
+
+    .emailP{
+        font-size: 16px;
+        padding: 15px 10px;
+        height: auto;
+        margin-top: 10px;
+
+    }
+
+    #conteIzq{
+        height: 100vh;
+        width: 60%;
+    }
+
+    .contForm{
+        height: 50%;
+      
+    }
+
+    .contenedorDerecho{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+        height: auto;
+             
+    }
+
+    .conteMedio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+   
+  
+    .conteDerDetailsTeam{
+        width: 100%;
+        
+    }
+
+    .conteMedioContact{
+        display: flex;
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contForm{
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .inpu,.inpuTextarea{
+        width: 200px;
+    }
+
+    .formDetails{
+        width: 100%;
+    }
+
+    .contFinal{
+        display: none;
+    }
+
+    .imgContac{
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .perfil{
+        width: 90px;
+        margin-left: -35px;
+    }
+
+    .per_img{
+        width: 90px;
+    
+    }
+
+    .perfilDetail{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80px;
+    }
+
+    #perDescrip1, #perDescrip2, #perDescrip3,#perDescrip4, #perDescrip5, #perDescrip6{
+        padding: 0;
+        margin-left: 30px;
+               
+    }
+
+    .pdescrip{
+        width: 100%;
+    }
+
+    .contenedorDerechoSend{
+        flex-direction: column;
+    }
+   
+    .imgSend{
+        width: 100%;
+        align-items: center;
+    }
+
+    .mensEnviado{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .listUl{
+        font-size: 16px;
+    }
+
+    .hSup{
+        font-size: 18px;
+    }
+
+    
+.descrip1{
+    font-size: 16px;
+    text-align: left;
+    
+}
+
+.descrip2{
+    font-size: 15px;
+    text-align: left;
+
+}
+
+.descrip3{
+    padding: 0px 5px;
+    margin-top: 15px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 10px;
+}
+
+}
+
+@media (min-width: 350px) and (max-width: 413px) {
+ 
+    .menssPersonal{
+        border: 2px solid olive;
+    }
+    
+
+    .marca{
+        position: absolute;
+        left: 0px;
+        top: 6px;
+        margin-left: 0;        
+       }
+   
+    .logo{
+           width: 65px;
+       }
+   
+    .nav{
+       display: flex;
+       justify-content: flex-end;
+       align-items: flex-start;
+       margin-right: 0;
+       margin-top: 20px;
+       width: 86%;
+       }
+   
+    .navID{
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           font-size: 14px;
+           color: rgb(143, 143, 143);
+           height: 46px;
+           margin: 20px 10px;
+           text-decoration: none;
+           transition: border-bottom 0.3s ease;
+           border: 1px solid transparent;
+       }
+   
+       .flag{
+           width: 20px;
+           height: 20px;
+           border-radius: 50%;
+           z-index: 100;
+           position: absolute;
+           top: -13px;
+           left: 55px;
+       }
+       #conteIzq{
+        height: 100vh;
+        width: 55%;
+    }
+
+    .menu{
+        height: 100vh;
+    }
+
+    .per_img{
+        width: 100px;
+    }
+
+    .perfil{
+        width: 90px;
+    }
+
+    .contFinal{
+        display: none;
+    }
+
+
+    .contenedorMayor{
+        height: auto;
+    }
+
+    .contenedorDerecho{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 70%;
+        height: auto;
+       
+    }
+  
+    
+    .conteMedio{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+ 
+
+    .perfil{
+        width: 90px;
+        margin-left: -35px;
+    }
+
+    #perDescrip1, #perDescrip2, #perDescrip3, #perDescrip4, #perDescrip5, #perDescrip6 {
+        margin-left: 20px;
+    }
+
+    .imgContac{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+    .conteMedioContact{
+        width: 100%;
+    }
+    .contForm{
+        height: 60%;
+        flex-direction: column;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .formDetails{
+        width: 100%;
        
     }
 
+    .bienvenidaZ{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+      }
+  
+      .divBienvenido{
+          width: 80%;
+          height: auto;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .tituloBienv{
+          font-size: 20px;
+          margin: 15px;
+      }
+  
+      .descripBienv{
+          font-size: 14px;
+          margin: 10px;
+          
+      }   
+   
+      .emailP{
+        font-size: 16px;
+        padding: 10px 8px;
+        height: auto;
+        margin-top: 10px;
+
+    }
+
+    .conteDerDetailsTeam{
+        width: 100%;
+       
+        
+    }
+
+    .listUl{
+        font-size: 16px;
+    }
+    
+    #area{
+        font-size: 18px;
+    }
+
+    .inpu,.inpuTextarea{
+        width: 160px;
+    }
+
+    .contenedorDerechoSend{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .imgSend{
+        width: 100%; 
+    }
+
+    .mensEnviado{
+        width: auto;
+    }
+
+    .hSup{
+        font-size: 18px;
+    }
+
+    .descrip1{
+        font-size: 16px;
+        text-align: left;
+        
+    }
+    
+    .descrip2{
+        font-size: 15px;
+        text-align: left;
+    
+    }
+    
+    .descrip3{
+        padding: 0px 5px;
+        margin-top: 15px;
+        font-size: 18px;
+        text-align: justify;
+    
+    }
+
+    .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
+        font-size: 16px;
+        text-align: left;
+        margin-top: 10px;
+    }
 }
