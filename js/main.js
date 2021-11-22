@@ -19,15 +19,15 @@ const descrip2_inqui = 'Esta rama del Derecho abarca el sector inmobiliario publ
 const descrip3_inqui = 'A nivel general, un abogado en el area de inquilinato se dedica a las siguientes materias:';
 
 const descrip1_protf = 'El abogado que asiste en todo lo concerniente al menor y la familia es un defensor frente a situaciones de familias con problemas o necesidades afines como divorcios o tutelas de los hijos.'   
-const descrip2_protf = 'Hemos unido ambas areas proteccion (del menor, la mujer) y la familia.'                                                                                                                                                                                                                                                                    
+const descrip2_protf = 'Hemos unido ambas areas proteccion (del menor, la mujer y la familia).'                                                                                                                                                                                                                                                                    
 const descrip3_protf = 'A nivel general, un abogado en el area de protección se dedica a las siguientes materias:';
 
-const descrip1_mayti = 'El abogado que cubre y asiste estas areas esta capacitado para la defensa nacional e internacional fijado por el derecho maritimo como el derecho aereo(aereonautico) ambos, ya que una aeronave o nave puede surcar los mares (internacional) o en el caso de una aeronave el aire sobre una nacion (nacion) o espacio internacional, el derecho terrestre abarca el derecho del transporte terrestre la soberania y proteccion de las tierras'   
-const descrip2_mayti = 'Hemos unido trea areas Derecho maritimo, Derecho aereo y Derecho terrestre.'                                                                                                                                                                                                                                                                    
-const descrip3_mayti = 'A nivel general, un abogado de derecho maritimo, areo y terrestre se dedica a las siguientes materias:';
+const descrip1_mayti = 'El abogado que cubre y asiste estas areas esta capacitado para la defensa nacional e internacional fijado por el derecho maritimo como el derecho aereo(aereonautico) ambos, ya que una aeronave o nave puede surcar los mares (internacional) o en el caso de una aeronave el aire sobre una nacion (nación) o espacio internacional, el derecho terrestre abarca el derecho del transporte terrestre la soberania y protección de las tierras'   
+const descrip2_mayti = 'Hemos unido trea areas Derecho marítimo, Derecho aereo y Derecho terrestre.'                                                                                                                                                                                                                                                                    
+const descrip3_mayti = 'A nivel general, un abogado de derecho marítimo, areo y terrestre se dedica a las siguientes materias:';
 
 
-let emailGrego = "https://formsubmit.co/86035898b13f5772b55eb07468e7ccc9"
+
 
 const matriz = 
         [{area: 'Derecho Civil', materias : ['• Obligaciones y contratos.', '• Accidentes, indemnizaciones y reclamaciones.', '• Separaciones y divorcios, parejas de hecho.', '• Herencias y sucesiones.', '• Responsabilidad civil y profesional.', '• Derechos de Consumidores y usuarios.', '• Asesoramiento jurídico-legal.', '• Constitucion de Empresas.', '• Reclamaciones por daños morales, daño emergente y lucro cesante.']},
@@ -35,8 +35,8 @@ const matriz =
          {area : 'Derecho Agrario', materias : ['• La propiedad agraria (régimen de los arrendamientos y aparcerías rurales)', '• La propiedad de los semovientes (régimen de las marcas y señales)', '• Régimen legal de la colonización', '• La Vialidad y el tránsito rural', '• La defensa sanitaria de la producción agropecuaria,', '• El régimen de las asociaciones de agricultores y ganaderos', '• Los seguros y el crédito agrario', '• El derecho de aguas', '• El régimen jurídico de las diversas industrias agropecuarias en particular', '• La reglamentación de la caza y de la pesca']},
          {area : 'Derecho Tributario', materias : ['• Presentación de impuestos.' , '• Liquidaciones', '• Recursos.' ,'• Comunicaciones.' , '• Solicitudes.' , '• Consultas de expedientes.' , '• Alegaciones.' ,  '• Documentación.']},
          {area : 'Derecho Inmobiliario', materias : ['• Modificaciones y correcciones.', '• Extinción del derecho de la propiedad.','• Adquisiciones.','• Arrendamientos.','• Ventas.', '• Herencias.', '• Transmisiones de derecho de la propiedad.']},
-         {area : 'Derecho Proteccion/familia', materias : ['• Asesoramiento jurídico sobre derecho de los menores.', '• Sistemas de protección del menor.', '• Situaciones de riesgo y de  desamparo.', '• Menores en acogimiento.', '• Tutelas y acogimiento del menor.', '• Privación patria potestad de los menores.', '• Separación y divorcio contencioso y de mutuo acuerdo.', '• Reclamaciones de pensión de alimentos y pensión compensatoria.', '• Capitulaciones matrimoniales.', '• Violencia de genero.']},   
-         {area : 'Derecho Maritimo y Terreste', materias : ['• Documentación de los buques y aeronaves nacionales.', '• Contrato de fletamento', '• Responsabilidad en embarcaciones de recreo.', '• Los accidentes marítimos y aereos.', '• Los daños por abordaje.', '• Desastres ecologicos terrestres y maritimos', '• Tramites aduanales.', '• Resolucion de perdidas aduanales.', '• Explotacion de recursos minerales y pesca.', '• Violación al espacio maritimo, aero y terreste de la nacion.']}];  
+         {area : 'Derecho Protección/familia', materias : ['• Asesoramiento jurídico sobre derecho de los menores.', '• Sistemas de protección del menor.', '• Situaciones de riesgo y de  desamparo.', '• Menores en acogimiento.', '• Tutelas y acogimiento del menor.', '• Privación patria potestad de los menores.', '• Separación y divorcio contencioso y de mutuo acuerdo.', '• Reclamaciones de pensión de alimentos y pensión compensatoria.', '• Capitulaciones matrimoniales.', '• Violencia de genero.']},   
+         {area : 'Derecho Marítimo y Terreste', materias : ['• Documentación de los buques y aeronaves nacionales.', '• Contrato de fletamento', '• Responsabilidad en embarcaciones de recreo.', '• Los accidentes marítimos y aereos.', '• Los daños por abordaje.', '• Desastres ecologicos terrestres y maritimos', '• Tramites aduanales.', '• Resolucion de perdidas aduanales.', '• Explotacion de recursos minerales y pesca.', '• Violación al espacio maritimo, aero y terreste de la nacion.']}];  
 
 
          
@@ -175,7 +175,7 @@ function tributario(){
 }
 
 
-function inmoviliario(){
+function inmobiliario(){
    console.log(matriz[4])
    area = document.getElementById('area').innerHTML = matriz[4].area;
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_inqui;
@@ -335,7 +335,7 @@ function civilTeam(){
   document.querySelector('#perDescrip3').style.display = ""  
 
   pe4 = document.querySelector('#perfil4')
-  pe4.style.cssText = 'display: none;'
+  pe4.style.cssText = 'display: " ";'
   document.querySelector('#perDescrip4').style.display = "" 
 
   pe5 = document.querySelector('#perfil5')
@@ -410,26 +410,28 @@ function agrarioTeam(){
 
    pe5p = document.querySelector('#perfil1')
    pe5p.style.cssText = 'display: " ";'
-   document.querySelector('#perDescrip1').style.display = "" 
+   document.querySelector('#perDescrip1').style.display = ""; 
  
  
   pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
-
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip4').style.display = ""; 
  
   pe5p = document.querySelector('#perfil3')
   pe5p.style.cssText = 'display: none;'
 
 
   pe5p = document.querySelector('#perfil2')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip2').style.display = "" 
 
   
   pe5p = document.querySelector('#perfil5')
   pe5p.style.cssText = 'display: none;'
 
   pe5p = document.querySelector('#perfil6')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip6').style.display = "" 
 
 
 }
@@ -451,16 +453,17 @@ function tributarioTeam(){
 
    pe5p = document.querySelector('#perfil1')
    pe5p.style.cssText = 'display: " ";'
-   document.querySelector('#perDescrip1').style.display = "" 
+   document.querySelector('#perDescrip1').style.display = ""; 
  
  
   pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip4').style.display = ""; 
 
  
   pe5p = document.querySelector('#perfil3')
   pe5p.style.cssText = 'display: " ";'
-  document.querySelector('#perDescrip3').style.display = ""
+  document.querySelector('#perDescrip3').style.display = "";
 
 
   pe5p = document.querySelector('#perfil2')
@@ -469,7 +472,7 @@ function tributarioTeam(){
   
   pe5p = document.querySelector('#perfil5')
   pe5p.style.cssText = 'display: " ";'
-  document.querySelector('#perDescrip5').style.display = ""
+  document.querySelector('#perDescrip5').style.display = "";
 
 
   pe5p = document.querySelector('#perfil6')
@@ -499,7 +502,8 @@ function inmoviliarioTeam(){
  
  
   pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip4').style.display = ""; 
 
  
   pe5p = document.querySelector('#perfil3')
@@ -507,7 +511,8 @@ function inmoviliarioTeam(){
 
 
   pe5p = document.querySelector('#perfil2')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip2').style.display = ""; 
 
   
   pe5p = document.querySelector('#perfil5')
@@ -515,7 +520,8 @@ function inmoviliarioTeam(){
 
 
   pe5p = document.querySelector('#perfil6')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip6').style.display = "" 
 
 
 }
@@ -544,7 +550,8 @@ function proteccionTeam(){
  
  
   pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip4').style.display = ""; 
 
  
   pe5p = document.querySelector('#perfil3')
@@ -588,7 +595,8 @@ function marytierraTeam(){
  
  
   pe5p = document.querySelector('#perfil4')
-  pe5p.style.cssText = 'display: none;'
+  pe5p.style.cssText = 'display: " ";'
+  document.querySelector('#perDescrip4').style.display = ""; 
 
  
   pe5p = document.querySelector('#perfil3')
@@ -618,10 +626,11 @@ function marytierraTeam(){
 let januMens = 'Hola, soy Janury BabincZuk, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
 let celeMens = 'Hola, soy Celesvina Indriago, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
 let moreMens = 'Hola, soy Jose Argenis Moreno, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
-let joseMens = 'Hola, soy Jose Enrique Bianchi, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let joseMens = 'Hola, soy Jose Enrique Bianchi, hazme una breve reseña de tu causa en la fase que se encuentre tanto como : prepraratoria, juicio o ejecución. Gustosamente te atendere procurando brindar el mejor asesoramiento. '
 let ybraMens = 'Hola, soy Ybrahin Ibarra, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
 let admiMens = 'Hola, soy el administrador del sitio, si deseas aparecer en legalz.link debes ser abogado legalmente licenciado en el territorio venezolano y aceptar las politicas del sitio.'
 
+const msnGeneral = 'Al ingresar los datos (nombre y correo) y hacer clic en el botón "Enviar", usted proporciona su firma electrónica y su consentimiento para que el abogado pueda comunicarse con usted, proporcionandole información para el desarrollo de su defensa o caso.'
 
 function janu(){
 
@@ -632,6 +641,8 @@ function janu(){
   document.getElementById('idForm_Cele').style.cssText = 'display : none';
   document.getElementById('idForm_More').style.cssText = 'display : none';
   document.getElementById('idForm_Admi').style.cssText = 'display : none';
+  document.getElementById('idForm_Jose').style.cssText = 'display : none';
+  document.getElementById('idForm_Ybra').style.cssText = 'display : none';
 
 
    document.querySelector('.liJanu').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
@@ -642,8 +653,9 @@ function janu(){
    document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
 
    document.querySelector('#menssPersonalJanu').innerHTML = januMens;
+   
 
-   console.log( document.querySelector('#menssPersonalJanu').innerHTML = januMens)
+
 }
 
 function cele(){
@@ -655,6 +667,8 @@ function cele(){
    document.getElementById('idForm_Janu').style.cssText = 'display : none';
    document.getElementById('idForm_More').style.cssText = 'display : none';
    document.getElementById('idForm_Admi').style.cssText = 'display : none';
+   document.getElementById('idForm_Jose').style.cssText = 'display : none';
+   document.getElementById('idForm_Ybra').style.cssText = 'display : none';
    
  
     document.querySelector('.liCele').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
@@ -665,7 +679,7 @@ function cele(){
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
     document.querySelector('#menssPersonalCele').innerHTML = celeMens;
-    console.log(document.querySelector('#menssPersonalCele').innerHTML = celeMens)
+   
  }
 
  function more(){
@@ -677,6 +691,8 @@ function cele(){
    document.getElementById('idForm_Janu').style.cssText = 'display : none';
    document.getElementById('idForm_Cele').style.cssText = 'display : none';
    document.getElementById('idForm_Admi').style.cssText = 'display : none';
+   document.getElementById('idForm_Jose').style.cssText = 'display : none';
+   document.getElementById('idForm_Ybra').style.cssText = 'display : none';
  
     document.querySelector('.liMore').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -686,8 +702,8 @@ function cele(){
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
     
-    document.querySelector('#menssPersonalMore').innerHTML = admiMens;
-    console.log(document.querySelector('#menssPersonalMore').innerHTML = moreMens)
+    document.querySelector('#menssPersonalMore').innerHTML = moreMens;
+  
  }
 
  function jose(){
@@ -695,6 +711,13 @@ function cele(){
    document.querySelector('.loadIni').style.cssText = 'display : none';
    document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
  
+   document.getElementById('idForm_Jose').style.cssText = 'display : block; display : flex';
+   document.getElementById('idForm_Janu').style.cssText = 'display : none';
+   document.getElementById('idForm_Cele').style.cssText = 'display : none';
+   document.getElementById('idForm_Admi').style.cssText = 'display : none';
+   document.getElementById('idForm_More').style.cssText = 'display : none';
+   document.getElementById('idForm_Ybra').style.cssText = 'display : none';
+
     document.querySelector('.liJose').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liMore').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -702,13 +725,21 @@ function cele(){
     document.querySelector('.liYbra').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
-    document.getElementById('menssPersonal').innerHTML = joseMens;
- }
+    document.querySelector('#menssPersonalJose').innerHTML = joseMens;
+
+ }                             
 
  function ybra(){
 
    document.querySelector('.loadIni').style.cssText = 'display : none';
    document.querySelector('.conteMedioContact').style.cssText = 'display : block ; display : flex';
+
+   document.getElementById('idForm_Ybra').style.cssText = 'display : block; display : flex';
+   document.getElementById('idForm_Janu').style.cssText = 'display : none';
+   document.getElementById('idForm_Cele').style.cssText = 'display : none';
+   document.getElementById('idForm_More').style.cssText = 'display : none';
+   document.getElementById('idForm_Admi').style.cssText = 'display : none';
+   document.getElementById('idForm_Jose').style.cssText = 'display : none';
  
     document.querySelector('.liYbra').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -717,7 +748,8 @@ function cele(){
     document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
     document.querySelector('.liAdmi').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
-    document.getElementById('menssPersonal').innerHTML = ybraMens;
+    document.querySelector('#menssPersonalYbra').innerHTML = ybraMens;
+    
  }
 
  function admi(){
@@ -729,6 +761,8 @@ function cele(){
    document.getElementById('idForm_Janu').style.cssText = 'display : none';
    document.getElementById('idForm_Cele').style.cssText = 'display : none';
    document.getElementById('idForm_More').style.cssText = 'display : none';
+   document.getElementById('idForm_Ybra').style.cssText = 'display : none';
+   document.getElementById('idForm_Jose').style.cssText = 'display : none';
  
     document.querySelector('.liAdmi').style.cssText = 'border-right: 10px solid #802a06; background-color: #9e3a0e;'
     document.querySelector('.liCele').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
@@ -738,5 +772,5 @@ function cele(){
     document.querySelector('.liJanu').style.cssText = 'border-right: 0px solid #802a06; background-color: none;'
  
     document.querySelector('#menssPersonalAdmi').innerHTML = admiMens;
-    console.log(document.querySelector('#menssPersonalAdmi').innerHTML = admiMens)
+   
  }

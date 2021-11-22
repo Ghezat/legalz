@@ -98,7 +98,8 @@ main{
     background-color: #131416;
     width: 100%;
     height: 220px;
- 
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 96%, 71% 100%, 29% 100%, 0 96%, 0% 20%);
+    
     
 }
 
@@ -109,11 +110,11 @@ main{
     width: 25%;
     height: 199px;
     position: relative;
-    margin-top: 30px;
+    margin: 5px 10px;
     box-shadow: 1px 2px 2px 1px ;
     background-color: #17191d;
     border-radius: 4px;
-    
+    border: 2px ridge rgb(46, 39, 40);
    
 }
 
@@ -135,6 +136,12 @@ main{
     color: #999999; 
     text-align: center;
     margin: 10px;
+   
+}
+
+.divBoton{
+    bottom: 10px;
+    position: absolute;
    
 }
 
@@ -857,6 +864,7 @@ li:hover{
 
     .divBienvenido{
         width: 80%;
+        padding: 0px 0px 10px 0px;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -906,13 +914,14 @@ li:hover{
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        overflow-y: auto;
+       
     }
 
    
   
     .conteDerDetailsTeam{
         width: 100%;
+        overflow-y: auto;
         
     }
 
@@ -1014,7 +1023,7 @@ li:hover{
 .descrip3{
     padding: 0px 5px;
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -1054,26 +1063,29 @@ li:hover{
        }
    
     .navID{
-           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-           font-size: 14px;
-           color: rgb(143, 143, 143);
-           height: 46px;
-           margin: 20px 10px;
-           text-decoration: none;
-           transition: border-bottom 0.3s ease;
-           border: 1px solid transparent;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 14px;
+        color: rgb(143, 143, 143);
+        height: 46px;
+        margin: 20px 10px;
+        text-decoration: none;
+        transition: border-bottom 0.3s ease;
+        border: 1px solid transparent;
        }
    
-       .flag{
-           width: 20px;
-           height: 20px;
-           border-radius: 50%;
-           z-index: 100;
-           position: absolute;
-           top: -13px;
-           left: 55px;
+    .flag{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 100;
+        position: absolute;
+        top: -13px;
+        left: 55px;
        }
-       #conteIzq{
+
+   
+
+    #conteIzq{
         height: 100vh;
         width: 55%;
     }
@@ -1082,14 +1094,8 @@ li:hover{
         height: 100vh;
     }
 
-    .per_img{
-        width: 100px;
-    }
-
-    .perfil{
-        width: 90px;
-    }
-
+   
+  
     .contFinal{
         display: none;
     }
@@ -1109,24 +1115,43 @@ li:hover{
        
     }
   
-    
     .conteMedio{
         display: flex;
         flex-direction: column;
         width: 100%;
         height: 100vh;
-        overflow-y: auto;
+       
     }
 
- 
 
     .perfil{
-        width: 90px;
+        width: 80px;
         margin-left: -35px;
     }
 
+    .per_img{
+        width: 90px;
+    }
+
+    .perfilDetail{
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 80px;
+        font-size: 15px;
+      
+    }
+
+
     #perDescrip1, #perDescrip2, #perDescrip3, #perDescrip4, #perDescrip5, #perDescrip6 {
         margin-left: 20px;
+    }
+
+    .pdescrip{
+        font-size: 13px;
+    }
+
+    .zona{
+        font-size: 13px;
     }
 
     .imgContac{
@@ -1140,6 +1165,7 @@ li:hover{
     .contForm{
         height: 60%;
         flex-direction: column;
+     
     }
 
     .form{
@@ -1158,25 +1184,26 @@ li:hover{
         height: auto;
       }
   
-      .divBienvenido{
-          width: 80%;
-          height: auto;
-          justify-content: center;
-          align-items: center;
-      }
+    .divBienvenido{
+        width: 80%;
+        padding: 0px 0px 10px 0px;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
   
-      .tituloBienv{
-          font-size: 20px;
-          margin: 15px;
-      }
+    .tituloBienv{
+        font-size: 20px;
+        margin: 15px;
+    }
   
-      .descripBienv{
+    .descripBienv{
           font-size: 14px;
           margin: 10px;
           
-      }   
+    }   
    
-      .emailP{
+    .emailP{
         font-size: 16px;
         padding: 10px 8px;
         height: auto;
@@ -1186,12 +1213,12 @@ li:hover{
 
     .conteDerDetailsTeam{
         width: 100%;
-       
-        
+        overflow-y: auto;
+               
     }
 
     .listUl{
-        font-size: 16px;
+        font-size: 15px;
     }
     
     #area{
@@ -1234,9 +1261,9 @@ li:hover{
     .descrip3{
         padding: 0px 5px;
         margin-top: 15px;
-        font-size: 18px;
+        font-size: 15px;
         text-align: justify;
-    
+  
     }
 
     .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
