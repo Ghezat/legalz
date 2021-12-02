@@ -1,1274 +1,1357 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
-
-main{
-    background-color: #ffffff;
-    height: 100vh;
-}
-
-.header{
-    display: flex;
-    position:sticky;
-    top:0px;
-    width: 100%;
-    height: 82px;
-    background-color: #131416;
-    box-shadow: 2px 4px 3px 1px #e2e2e2;
-    z-index: 100; /*posiciona el elemento arriba de otros */
-}
-
-.marca {
-    margin-top: 1px;
-    margin-left: 80px;
-
-}
-
-.logo{
-    width: 70px;
-}
-
-.nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 80%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     
-}
-
-
-
-.flag{
-    width: 40px;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-
-.navID{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(143, 143, 143);
-    height: 46px;
-    margin: 20px 25px;
-    text-decoration: none;
-    transition: border-bottom 0.3s ease;
-    border: 1px solid transparent;
-         
-}
-
-.navID:hover{
-    color: #c9c9c9;
-    border-bottom: 4px solid #9e3a0e;
-    cursor: pointer;
-   
-    
-}
-
-.indiceNav{
-    width: 100%;
-    height: 4px;
-    background-color: #e2e2e2;
  }
-
-.imgFondoZ{
-    background-color: #131416;
-}
-
-
-.imgZ{
-    width: 100%;
+ 
+ main{
     
-    box-sizing: 2px 1px 1px 1px ;
-
-}
-
-.logoLargo{
-    width: 300px;
-    height: 100px;
-}
-
-.bienvenidaZ{
-    display: flex;
-    justify-content: space-around;
-    background-color: #131416;
-    width: 100%;
-    height: 220px;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 96%, 71% 100%, 29% 100%, 0 96%, 0% 20%);
+     height: 100vh;
+ }
+ 
+ .header{
+     display: flex;
+     position:sticky;
+     top:0px;
+     width: 100%;
+     height: 82px;
+     background-color: #131416;
+     box-shadow: 2px 4px 3px 1px #e2e2e2;
+     z-index: 100; /*posiciona el elemento arriba de otros */
+ }
+ 
+ .marca {
+     margin-top: 1px;
+     margin-left: 80px;
+ 
+ }
+ 
+ .logo{
+     width: 70px;
+ }
+ 
+ .nav{
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-start;
+     margin-left: 50px;
+     margin-right: 20px;
+     margin-top: 20px;
+     width: 80%;
+     
+ }
+ 
+ 
+ 
+ .flag{
+     width: 40px;
+     margin-left: 30px;
+     margin-top: 20px;
+ }
+ 
+ 
+ .navID{
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgb(143, 143, 143);
+     height: 46px;
+     margin: 20px 25px;
+     text-decoration: none;
+     transition: border-bottom 0.3s ease;
+     border: 1px solid transparent;
+          
+ }
+ 
+ .navID:hover{
+     color: #c9c9c9;
+     border-bottom: 4px solid #9e3a0e;
+     cursor: pointer;
     
-    
-}
-
-.divBienvenido{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    width: 25%;
-    height: 199px;
-    position: relative;
-    margin: 5px 10px;
-    box-shadow: 1px 2px 2px 1px ;
-    background-color: #17191d;
-    border-radius: 4px;
-    border: 2px ridge rgb(46, 39, 40);
-   
-}
-
-.tituloBienv{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    color: #555555;
-    text-align: center;
-    margin: 20px;
-   
-    
-}
-
-.descripBienv{
-    font-family: 'Roboto', sans-serif;
-    line-height : 24px;
-    font-size: 16px;
-    color: #999999; 
-    text-align: center;
-    margin: 10px;
-   
-}
-
-.divBoton{
-    bottom: 10px;
-    position: absolute;
-   
-}
-
-.boton{
-    width: 25px;
-}
-
-.message{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 30px 60px 30px;
-    background-color: #131416;
-    background-color: #ececec;
-}
-
-
-
-.email{
-    display: flex;
-    margin-top: 30px;
-    width: 100%;
-    background-color: #e2dddd;
-    height: auto;
-    
-}
-
-.imgEmail{
-    width: 100px;
-    height: 90px;
-    margin: 20px;
-    
-}
-.emailP{
-    font-family: 'Roboto', sans-serif;
-    font-size: 26px;
-    color: black;
-    text-align: left;
-    padding: 15px 60px;
-    height: 120px;
-    margin-top: 20px;
-}
-
-
-.messageStart{
-    display: flex;
-    justify-content: center;
-    background-color: slategray;
-    background: rgb(147,160,186);
-    background: linear-gradient(90deg, rgba(147,160,186,1) 0%, rgba(158,58,14,1) 90%);
-    padding: 5px;
-    margin-top: 20px;
-    color: rgb(2, 23, 31);
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-
-.contenedorMayor{
-    display: flex;
-    width: 100%;
-    display: none;
-  
-    
-}
-
-.contenedorMayorSend{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px;
-}
-
-#conteIzq{
-    width: 20%;
-    left: 0px;
-    transition: all 0.5s ease;
-    position: relative;
-    
-}
-
-
-.menu{
-    width: 100%;
-    height: 100%;
-    
-
-   
-}
-/*
-.btn-Aside{
-    
-    position: absolute;
-    top: 104px;
-    left: 255px;
-    width: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    color: #9e3a0e;
-    background-color: rgb(168, 167, 164);;
-    text-align: center;
-    text-justify: center;
-}
-*/
-.MenuGobalInter{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
-    height: auto;
-    top: 30px;
-    position: absolute;
-
-   
-    
-}
-
-.sup{
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    margin-bottom: 10px; 
-    background-color: rgb(168, 167, 164 , 1);
-
-    
-}
-
-
-h3{
-    width: 100%;
-    color: #9e3a0e;
-    font-size: 24px;
-    border: 1px ridge #706e6e;
-    border-radius: 2px;
-    padding: 4px 26px;
-   
-    
-}
-
-
-.inf{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    
-
-}
-
-.listUl{
-   width: 100%;
-    background-color: rgb(168, 167, 164, 0.);
-    border: 2px ridge #706e6e;
-    color: #f1f3f4;
-    font-size: 20px;
-    padding: 2px;
-    cursor: pointer;
-}
-
-li{
-    border: 2px ridge #706e6e;
-    width: 100%;
-    padding: 2px 10px 2px 2px;
-    list-style: none;
-}
-
-li:hover{
-    background-color: #9e3a0e;
-    border-right: 10px solid #802a06;
-}
-
-.legalZ{
-    display: flex;
-    font-size: 26px;
-    color: honeydew;
-    margin-top: 210px;
-}
-
-.Z{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    margin-left:5px;
-    background-color: black;
-}
-
-.contenedorDerecho{
-    display: flex;
-    width: 80%;
-}
-
-.contenedorDerechoSend{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70%;  
-}
-
-.imgSend{
-    width: 500px;
-}
-
-.mensEnviado{
-    font-size: 20px;
-}
-
-.gracias{
-    color: tomato;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.conteMedio{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    
-}
-
-.conteMedioContact{
-    display: flex;
-    flex-direction: column;
-    display: none;
-    width: 70%;
-    
-}
-
-
-.loadIni{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-   
-}
-
-.imgContac{
-    width: 60%;
-    
-  
-    
-}
-
-.contForm{
-    display: flex;
-    background-color: whitesmoke;
-    width: 100%;
-    height: 50%;
-   
-}
-
-.form{
-    width: 60%;
-    padding: 20px;
-    
-}
-
-.formDetails{
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    height: auto;
-    padding: 20px 10px;
-    border: 2px solid silver;
-    border-radius: 4px;
-    overflow-y: auto;
-  
-}   
-
-#menssPersonal{
-    margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#menssGeneral{
-    color: gray;
-    margin-top: 30px;
-}
-
-
-.inpu{
-    margin-bottom: 20px;
-    padding-left: 5px;
-    border: none;
-    width: 60%;
-    height: 28px;
-    border-radius: 2px;
-    box-shadow: 0px 1px 1px 0px grey;
-    outline-width: 0;
-}
-
-.inpu:hover{
-    border: 2px solid #c55120;    
-    border-radius: 3px;
-
-}
-
-.inpuTextarea{
-    margin-bottom: 20px;
-    border-radius: 2px;
-    padding-left: 5px;
-    border: none;
-    outline-width: 0;
-    width: 80%;
-    box-shadow: 0px 1px 1px 0px grey;
-    resize: none;
-    /*
-    min-height: 40px;
-    max-height: 100px;*/
-}
-
-.inpuTextarea:hover {
-    border: 2px solid #c55120;    
-    border-radius: 3px;
-}
-
-.contButton{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
-}
-
-.button{
-    width: 90px;
-    height: 30px;
-    border-radius: 3px;
-    border: none;
-    background-color: rgb(230, 230, 230);
-    box-shadow: 0px 1px 1px 0px grey;
-}
-
-.button:hover{
-    cursor: pointer;
-    outline: none;
-    background: rgb(218, 218, 218);
-    transition: all 0.3s;
-}
-
-/* ------ */
-
-
-.contFinal{
-   /*seccion de publicidad */
-    width: 30%;
-    height: 100%;
-    background-color: wheat;
-
-}
-
-.conteArea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    width: 100%;
-    height: 6%;
-    background-color: rgba(88, 86, 86, 0.1);
-  
-    
-}
-
-.conteDerDetails{
-    margin-top: 20px;
-    padding: 10px;
-    width: 100%;
-    height: 600px;
-    overflow: auto;
-  
-   
-}
-
-#area{
-    color: rgb(80, 80, 80);
-    font-size: 24px;
-    text-transform: capitalize;
-}
-
-
-.descrip1{
-    display: block;
-    color: rgb(80, 80, 80);
-    font-size: 20px;
-    text-align: justify;
-    
-}
-
-.descrip2{
-    display: block;
-    margin-top: 10px;
-    color: rgb(80, 80, 80);
-    font-size: 18px;
-    text-align: justify;
-
-}
-
-.descrip3{
-    display: block;
-    padding: 0px 5px;
-    background-color: slategrey;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    text-align: justify;
-
-}
-
-.materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
-    display: block;
-    color: rgb(58, 58, 58);
-    font-size: 18px;
-    text-align: justify;
-    margin-top: 10px;
-}
-
-.conteDerDetailsTeam{
-    
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-   
-}
-
-#perfil1, #perfil2, #perfil3, #perfil4, #perfil5, #perfil6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 50px;
-    width: 80%;
-    height: 190px;
-    
-    
-}
-
-.perfil{
-    display: flex;
-    width: 110px;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(28, 29, 29);
-    border: 2px ridge brown;
-
-}
-
-
-.per_img{
-    border-radius: 0%;
-    width: 130px;
-    box-shadow: 0px 2px 6px 1px black;
-    transition: transform 0.5s 0.0s ease;
-    
-}
-
-.per_img:hover{
-    transform: rotate(5deg);
-   
-}
-
-#perDescrip1, #perDescrip2, #perDescrip3,#perDescrip4, #perDescrip5, #perDescrip6 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    height: 100%;
-    padding: 10px;
-    background-color: rgb(209, 214, 214, 0.3 );
-    border-radius: 2px;
-    margin-left: 100px;
-}
-
-.pdescrip{
-    color: rgb(28, 29, 29);
-    overflow-y: auto;
-}
-
-.perfilDetail{
-    margin-top: 10px;
-    font-size: 18px;
-    color: rgb(230, 219, 219);
-    text-shadow: 1px 3px 2px 1px gray;
-    padding-right: 12px;
-   
-}
-
-.zona{
-    margin-top: 10px;
-    border: 1px solid black;
-    width: 100%;
-}
-
-
-
-/* ----- load -----*/
-
-.lds-ripple {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-  }
-  .lds-ripple div {
-    position: absolute;
-    border: 4px solid rgb(24, 23, 23);
-    opacity: 1;
-    border-radius: 50%;
-    animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-  }
-  .lds-ripple div:nth-child(2) {
-    animation-delay: -0.5s;
-  }
-  @keyframes lds-ripple {
-    0% {
-      top: 36px;
-      left: 36px;
-      width: 0;
-      height: 0;
-      opacity: 1;
-    }
-    100% {
-      top: 0px;
-      left: 0px;
-      width: 72px;
-      height: 72px;
-      opacity: 0;
-    }
-  }
-
-  .contPreload{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100vh;
-      background-color: rgb(255, 255, 255);
+     
+ }
+ 
+ .indiceNav{
+     width: 100%;
+     height: 4px;
+     background-color: #e2e2e2;
   }
  
-
-
-  .footerLegalz{
-      background-color: #17191d;
-      width: 100%;
-      height: 230px;
-      padding: 30px;
-  }
-
-  .conteFooterMensaje{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+ .imgFondoZ{
+     background-color: #131416;
+ }
+ 
+ 
+ .imgZ{
+     width: 100%;
      
-  }
-
-  .footerLegal{
-      color: white;
-      font-size: 22px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .footerMensaje{
-      color: whitesmoke;
-      font-family: 'Roboto', sans-serif;
-  }
-
-@media (min-width: 768px) and (max-width: 1024px) {
+     box-sizing: 2px 1px 1px 1px ;
+ 
+ }
+ 
+ .logoLargo{
+     width: 300px;
+     height: 100px;
+ }
+ 
+ .bienvenidaZ{
+     display: flex;
+     justify-content: space-around;
+     background-color: #131416;
+     width: 100%;
+     height: 220px;
+     
+     
+     
+ }
+ 
+ .divBienvenido{
+     display: flex;
+     flex-direction:column;
+     align-items: center;
+     width: 25%;
+     height: 199px;
+     position: relative;
+     margin: 5px 10px;
+     box-shadow: 1px 2px 2px 1px ;
+     background-color: #17191d;
+     border-radius: 4px;
+     border: 2px ridge rgb(46, 39, 40);
+    
+ }
+ 
+ .tituloBienv{
+     font-family: 'Roboto', sans-serif;
+     font-weight: bold;
+     font-size: 24px;
+     color: #555555;
+     text-align: center;
+     margin: 20px;
+    
+     
+ }
+ 
+ .descripBienv{
+     font-family: 'Roboto', sans-serif;
+     line-height : 24px;
+     font-size: 16px;
+     color: #999999; 
+     text-align: center;
+     margin: 10px;
+    
+ }
+ 
+ .divBoton{
+     bottom: 10px;
+     position: absolute;
+    
+ }
+ 
+ .boton{
+     width: 25px;
+ }
+ 
+ 
+ 
+ .consultasArticle{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     padding: 10px;
+     background-color: white;
+     box-shadow: 1px 1px 5px 0px gray;
+ 
+ }
+ 
+ .consultasH1{
+     font-size: 30px;
+     color: black;
+ }
+ 
+ .consultasGratis{
+     text-transform: uppercase;
+     color: #9e3a0e;
+ }
+ 
+ .casaConsulta{
+     width: 260px;
+ }
+ 
+ .message{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 40px 30px 60px 30px;
+     background-color: #131416;
+     background-color: #fff;
+ }
+ 
+ 
+ 
+ .email{
+     display: flex;
+     margin-top: 30px;
+     width: 100%;
+     background-color: #e2dddd;
+     height: auto;
+     
+ }
+ 
+ .imgEmail{
+     width: 100px;
+     height: 90px;
+     margin: 20px;
+     
+ }
+ .emailP{
+     font-family: 'Roboto', sans-serif;
+     font-size: 26px;
+     color: black;
+     text-align: left;
+     padding: 15px 60px;
+     height: 120px;
+     margin-top: 20px;
+ }
+ 
+ 
+ .messageStart{
+     display: flex;
+     justify-content: center;
+     background-color: slategray;
+     background: rgb(147,160,186);
+     background: linear-gradient(90deg, rgba(147,160,186,1) 0%, rgba(158,58,14,1) 90%);
+     padding: 5px;
+     margin-top: 20px;
+     color: rgb(2, 23, 31);
+     font-size: 20px;
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     
+ }
+ 
+ .contenedorMayor{
+     display: flex;
+     width: 100%;
+     display: none;
    
-
-    .nav{
+     
+ }
+ 
+ .contenedorMayorSend{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 60px;
+ }
+ 
+ #conteIzq{
+     width: 20%;
+     left: 0px;
+     transition: all 0.5s ease;
+     position: relative;
+     
+ }
+ 
+ 
+ .menu{
+     width: 100%;
+     height: 100%;
+     
+ 
+    
+ }
+ /*
+ .btn-Aside{
+     
+     position: absolute;
+     top: 104px;
+     left: 255px;
+     width: 30px;
+     font-size: 16px;
+     cursor: pointer;
+     color: #9e3a0e;
+     background-color: rgb(168, 167, 164);;
+     text-align: center;
+     text-justify: center;
+ }
+ */
+ .MenuGobalInter{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     width: 90%;
+     height: auto;
+     top: 30px;
+     position: absolute;
+ 
+    
+     
+ }
+ 
+ .sup{
+ 
+     display: flex;
+     justify-content: flex-start;
+     align-items: flex-start;
+     width: 100%;
+     margin-bottom: 10px; 
+     background-color: rgb(168, 167, 164 , 1);
+ 
+     
+ }
+ 
+ 
+ h3{
+     width: 100%;
+     color: #9e3a0e;
+     font-size: 24px;
+     border: 1px ridge #706e6e;
+     border-radius: 2px;
+     padding: 4px 26px;
+    
+     
+ }
+ 
+ 
+ .inf{
+     display: flex;
+     justify-content: flex-start;
+     width: 100%;
+     
+ 
+ }
+ 
+ .listUl{
+    width: 100%;
+     background-color: rgb(168, 167, 164, 0.);
+     border: 2px ridge #706e6e;
+     color: #f1f3f4;
+     font-size: 20px;
+     padding: 2px;
+     cursor: pointer;
+ }
+ 
+ li{
+     border: 2px ridge #706e6e;
+     width: 100%;
+     padding: 2px 10px 2px 2px;
+     list-style: none;
+ }
+ 
+ li:hover{
+     background-color: #9e3a0e;
+     border-right: 10px solid #802a06;
+ }
+ 
+ .legalZ{
+     display: flex;
+     font-size: 26px;
+     color: honeydew;
+     margin-top: 210px;
+ }
+ 
+ .Z{
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     margin-left:5px;
+     background-color: black;
+ }
+ 
+ .contenedorDerecho{
+     display: flex;
+     width: 80%;
+ }
+ 
+ .contenedorDerechoSend{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 70%;  
+ }
+ 
+ .imgSend{
+     width: 500px;
+ }
+ 
+ .mensEnviado{
+     font-size: 20px;
+ }
+ 
+ .gracias{
+     color: tomato;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ 
+ .conteMedio{
+     display: flex;
+     flex-direction: column;
+     width: 70%;
+     
+ }
+ 
+ .conteMedioContact{
+     display: flex;
+     flex-direction: column;
+     display: none;
+     width: 70%;
+ 
+ }
+ 
+ 
+ .loadIni{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+    
+ }
+ 
+ .conteImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+ .imgContac{
+     width: 65%;
+   
+     
+       
+ }
+ 
+ .contForm{
+     display: flex;
+     background-color: whitesmoke;
+     width: 100%;
+     height: 50%;
+    
+ }
+ 
+ .form{
+     width: 60%;
+     padding: 20px;
+     
+ }
+ 
+ .formDetails{
+     display: flex;
+     flex-direction: column;
+     width: 35%;
+     height: auto;
+     padding: 20px 10px;
+     border: 2px solid silver;
+     border-radius: 4px;
+     overflow-y: auto;
+   
+ }   
+ 
+ #menssPersonal{
+     margin-top: 10px;
+     font-family: 'Roboto', sans-serif;
+ }
+ 
+ #menssGeneral{
+     color: gray;
+     margin-top: 30px;
+ }
+ 
+ 
+ .inpu{
+     margin-bottom: 20px;
+     padding-left: 5px;
+     border: none;
+     width: 60%;
+     height: 28px;
+     border-radius: 2px;
+     box-shadow: 0px 1px 1px 0px grey;
+     outline-width: 0;
+ }
+ 
+ .inpu:hover{
+     border: 2px solid #c55120;    
+     border-radius: 3px;
+ 
+ }
+ 
+ .inpuTextarea{
+     margin-bottom: 20px;
+     border-radius: 2px;
+     padding-left: 5px;
+     border: none;
+     outline-width: 0;
+     width: 80%;
+     box-shadow: 0px 1px 1px 0px grey;
+     resize: none;
+     /*
+     min-height: 40px;
+     max-height: 100px;*/
+ }
+ 
+ .inpuTextarea:hover {
+     border: 2px solid #c55120;    
+     border-radius: 3px;
+ }
+ 
+ .contButton{
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+ 
+ }
+ 
+ .button{
+     width: 90px;
+     height: 30px;
+     border-radius: 3px;
+     border: none;
+     background-color: rgb(230, 230, 230);
+     box-shadow: 0px 1px 1px 0px grey;
+ }
+ 
+ .button:hover{
+     cursor: pointer;
+     outline: none;
+     background: rgb(218, 218, 218);
+     transition: all 0.3s;
+ }
+ 
+ /* ------ */
+ 
+ 
+ .contFinal{
+    /*seccion de publicidad */
+     width: 30%;
+     height: 100%;
+     background-color: wheat;
+ 
+ }
+ 
+ .conteArea{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 30px;
+     width: 100%;
+     padding: 5px;
+     background-color: rgba(88, 86, 86, 0.1);
+ 
+     
+ }
+ 
+ .conteDerDetails{
+     margin-top: 20px;
+     padding: 10px;
+     width: 100%;
+     height: 600px;
+     overflow: auto;
+   
+    
+ }
+ 
+ #area{
+     color: rgb(80, 80, 80);
+     font-size: 24px;
+     text-transform: capitalize;
+ 
+ }
+ 
+ .conteImgArea{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+ }
+ 
+ .imgArea{
+     width: 55%;
+    
+ }
+ 
+ .descrip1{
+     display: block;
+     color: rgb(80, 80, 80);
+     font-size: 20px;
+     text-align: justify;
+     
+ }
+ 
+ .descrip2{
+     display: block;
+     margin-top: 10px;
+     color: rgb(80, 80, 80);
+     font-size: 18px;
+     text-align: justify;
+ 
+ }
+ 
+ .descrip3{
+     display: block;
+     padding: 0px 5px;
+     background-color: slategrey;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     color: rgb(255, 255, 255);
+     font-size: 18px;
+     text-align: justify;
+ 
+ }
+ 
+ .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
+     display: block;
+     color: rgb(58, 58, 58);
+     font-size: 18px;
+     text-align: justify;
+     margin-top: 10px;
+ }
+ 
+ .conteDerDetailsTeam{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+   
+    
+ }
+ 
+ #perfil1, #perfil2, #perfil3, #perfil4, #perfil5, #perfil6 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 30px 50px;
+     width: 80%;
+     height: 190px;
+     
+     
+ }
+ 
+ .perfil{
+     display: flex;
+     width: 110px;
+     align-items: center;
+     flex-direction: column;
+     background-color: rgb(28, 29, 29);
+     border: 2px ridge brown;
+ 
+ }
+ 
+ 
+ .per_img{
+     border-radius: 0%;
+     width: 130px;
+     box-shadow: 0px 2px 6px 1px black;
+     transition: transform 0.5s 0.0s ease;
+     
+ }
+ 
+ .per_img:hover{
+     transform: rotate(5deg);
+    
+ }
+ 
+ #perDescrip1, #perDescrip2, #perDescrip3,#perDescrip4, #perDescrip5, #perDescrip6 {
+     display: flex;
+     flex-direction: column;
+     width: 65%;
+     height: 100%;
+     padding: 10px;
+     background-color: rgb(209, 214, 214, 0.3 );
+     border-radius: 2px;
+     margin-left: 100px;
+ }
+ 
+ .pdescrip{
+     color: rgb(28, 29, 29);
+     overflow-y: auto;
+ }
+ 
+ .perfilDetail{
+     margin-top: 10px;
+     font-size: 18px;
+     color: rgb(230, 219, 219);
+     text-shadow: 1px 3px 2px 1px gray;
+     padding-right: 12px;
+    
+ }
+ 
+ .zona{
+     margin-top: 10px;
+     border: 1px solid black;
+     width: 100%;
+ }
+ 
+ 
+ 
+ /* ----- load -----*/
+ 
+ .lds-ripple {
+     display: inline-block;
+     position: relative;
+     width: 80px;
+     height: 80px;
+   }
+   .lds-ripple div {
+     position: absolute;
+     border: 4px solid rgb(24, 23, 23);
+     opacity: 1;
+     border-radius: 50%;
+     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+   }
+   .lds-ripple div:nth-child(2) {
+     animation-delay: -0.5s;
+   }
+   @keyframes lds-ripple {
+     0% {
+       top: 36px;
+       left: 36px;
+       width: 0;
+       height: 0;
+       opacity: 1;
+     }
+     100% {
+       top: 0px;
+       left: 0px;
+       width: 72px;
+       height: 72px;
+       opacity: 0;
+     }
+   }
+ 
+   .contPreload{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       height: 100vh;
+       background-color: rgb(255, 255, 255);
+   }
+  
+ 
+ 
+   .footerLegalz{
+       background-color: #17191d;
+       width: 100%;
+       height: 230px;
+       padding: 30px;
+   }
+ 
+   .conteFooterMensaje{
+       display: flex;
+       height: 100%;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+      
+   }
+ 
+   .footerLegal{
+       color: white;
+       font-size: 22px;
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+ 
+   .footerMensaje{
+       color: whitesmoke;
+       text-align: center;
+       font-family: 'Roboto', sans-serif;
+   }
+ 
+ @media (min-width: 768px) and (max-width: 1024px) {
+    
+ 
+     .nav{
+         display: flex;
+         justify-content: flex-end;
+         align-items: flex-start;
+         margin-top: 20px;
+         width: 80%;     
+         
+     }
+ 
+     .navID{
+         margin: 20px 15px;  
+     }
+     
+ 
+     .tituloBienv{
+         font-size: 18px;
+         margin: 15px;
+     }
+ 
+   
+     .descripBienv{
+         flex-wrap: nowrap;
+         font-size: 14px;
+         text-align: center;
+         margin: 5px;
+     }
+ 
+     .emailP{
+         height: auto;
+     }
+ 
+     .bienvenidaZ{
+         height: auto;
+       }
+     
+     .divBienvenido{
+         margin-top: 10px;
+         width: 60%;
+         height: 180px;  
+         
+     }
+ 
+ 
+     .consultasH1{
+         font-size: 22px;
+         text-align: left;
+         padding: 20px;
+     }
+ 
+     .casaConsulta{
+         width: 200px;
+     }
+ 
+     .contenedorDerecho{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         width: 70%;
+      
+     }
+ 
+     .conteMedio{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+       
+     }
+     
+     .contFinal{
+        
+         width: 100%;
+         height: 340px;
+        
+     }
+ 
+     .menu{
+         width: 100%;
+           
+     }
+ 
+     #conteIzq{
+         width: 30%;
+         height: 100vh;
+        
+      
+     }
+ 
+     .conteMedioContact{
+         display: flex;
+         flex-direction: column;
+         display: none;
+         width: 100%;
+       
+         
+     }
+ 
+     .contForm{
+         height: 65%;
+ 
+     }
+ 
+    
+ 
+ }
+ 
+ 
+ @media (min-width:414px) and (max-width: 767px) {
+ 
+     .marca{
+      position: absolute;
+      left: 0px;
+      top: 6px;
+      margin-left: 0;
+         
+     }
+ 
+     .logo{
+         width: 65px;
+     }
+ 
+     .nav{
+     display: flex;
+     justify-content: flex-end;
+     align-items: flex-start;
+     margin-right: 0;
+     margin-top: 20px;
+     width: 86%;
+     
+     }
+ 
+     .navID{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         color: rgb(143, 143, 143);
+         height: 46px;
+         margin: 20px 15px;
+         text-decoration: none;
+         transition: border-bottom 0.3s ease;
+         border: 1px solid transparent;
+     }
+ 
+     .flag{
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         z-index: 100;
+         position: absolute;
+         top: -13px;
+         left: 55px;
+     }
+ 
+ 
+     .contenedorMayor{
+         height: auto;
+     }
+ 
+     .bienvenidaZ{
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+       height: auto;
+       clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 98%, 75% 100%, 25% 100%, 0 98%, 0% 30%);
+     }
+ 
+     .divBienvenido{
+         width: 80%;
+         padding: 0px 0px 10px 0px;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+     }
+ 
+     .tituloBienv{
+         font-size: 20px;
+         margin: 15px;
+     }
+ 
+     .descripBienv{
+         font-size: 14px;
+         margin: 10px;
+         
+     }   
+ 
+     .consultasH1{
+         font-size: 16px;
+     }    
+ 
+     .casaConsulta{
+         width: 120px;
+     }
+ 
+     .emailP{
+         font-size: 16px;
+         padding: 15px 10px;
+         height: auto;
+         margin-top: 10px;
+ 
+     }
+ 
+     #conteIzq{
+         height: 100vh;
+         width: 60%;
+     }
+ 
+     
+     .contenedorDerecho{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         width: 70%;
+         height: auto;
+              
+     }
+ 
+     .conteMedio{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100vh;
+        
+     }
+ 
+     .conteImgArea{
+         margin-top: 30px;
+       }
+   
+     .conteDerDetailsTeam{
+         width: 100%;
+         overflow-y: auto;
+        
+         
+     }
+ 
+     .conteMedioContact{
+         display: flex;
+         flex-direction: column;
+         display: none;
+         width: 100%;
+         height: 100vh;
+     }
+ 
+     .contForm{
+         height: 60%;
+         flex-direction: column;
+         overflow-y: auto;
+     }
+ 
+     .form{
+         width: 100%;
+     }
+ 
+     .inpu,.inpuTextarea{
+         width: 200px;
+     }
+ 
+     .formDetails{
+         width: 100%;
+     }
+ 
+     .contFinal{
+         display: none;
+     }
+ 
+     .imgContac{
+         width: 80%;
+         margin-top: 20px;
+     }
+ 
+     .perfil{
+         width: 90px;
+         margin-left: -35px;
+     }
+ 
+     .per_img{
+         width: 90px;
+     
+     }
+ 
+     .perfilDetail{
+         align-items: flex-start;
+         justify-content: flex-start;
+         width: 80px;
+     }
+ 
+     #perDescrip1, #perDescrip2, #perDescrip3,#perDescrip4, #perDescrip5, #perDescrip6{
+         padding: 0;
+         margin-left: 30px;
+                
+     }
+ 
+     .pdescrip{
+         width: 100%;
+     }
+ 
+     .contenedorDerechoSend{
+         flex-direction: column;
+     }
+    
+     .imgSend{
+         width: 100%;
+         align-items: center;
+     }
+ 
+     .mensEnviado{
+         font-size: 16px;
+         margin-top: 30px;
+     }
+ 
+     .listUl{
+         font-size: 16px;
+     }
+ 
+     .hSup{
+         font-size: 18px;
+     }
+ 
+     
+ .descrip1{
+     font-size: 16px;
+     text-align: left;
+     
+ }
+ 
+ .descrip2{
+     font-size: 15px;
+     text-align: left;
+ 
+ }
+ 
+ .descrip3{
+     padding: 0px 5px;
+     margin-top: 15px;
+     font-size: 16px;
+     text-align: justify;
+ }
+ 
+ .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
+     font-size: 16px;
+     text-align: left;
+     margin-top: 10px;
+ }
+ 
+ }
+ 
+ @media (min-width: 350px) and (max-width: 413px) {
+  
+     .menssPersonal{
+         border: 2px solid olive;
+     }
+     
+ 
+     .marca{
+         position: absolute;
+         left: 0px;
+         top: 6px;
+         margin-left: 0;        
+        }
+    
+     .logo{
+            width: 65px;
+        }
+    
+     .nav{
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
+        margin-right: 0;
         margin-top: 20px;
-        width: 80%;     
-        
-    }
-
-    .navID{
-        margin: 20px 15px;  
-    }
+        width: 86%;
+        }
     
-
-    .tituloBienv{
-        font-size: 18px;
-        margin: 15px;
-    }
-
-  
-    .descripBienv{
-        flex-wrap: nowrap;
-        font-size: 14px;
-        text-align: center;
-        margin: 5px;
-    }
-
-    .emailP{
-        height: auto;
-    }
-
-    .bienvenidaZ{
-        height: auto;
-      }
+     .navID{
+         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+         font-size: 14px;
+         color: rgb(143, 143, 143);
+         height: 46px;
+         margin: 20px 10px;
+         text-decoration: none;
+         transition: border-bottom 0.3s ease;
+         border: 1px solid transparent;
+        }
     
-    .divBienvenido{
-        margin-top: 10px;
-        width: 60%;
-        height: 180px;  
-        
-    }
-
-    .contenedorDerecho{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 70%;
-     
-    }
-
-    .conteMedio{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-      
-    }
-    
-    .contFinal{
-       
-        width: 100%;
-        height: 340px;
-       
-    }
-
-    .menu{
-        width: 100%;
-          
-    }
-
-    #conteIzq{
-        width: 30%;
-        height: 100vh;
-       
-     
-    }
-
-    .conteMedioContact{
-        display: flex;
-        flex-direction: column;
-        display: none;
-        width: 100%;
-      
-        
-    }
-
-    .contForm{
-        height: 65%;
-
-    }
-
-   
-
-}
-
-@media (min-width:414px) and (max-width: 767px) {
-
-    .marca{
-     position: absolute;
-     left: 0px;
-     top: 6px;
-     margin-left: 0;
-        
-    }
-
-    .logo{
-        width: 65px;
-    }
-
-    .nav{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-right: 0;
-    margin-top: 20px;
-    width: 86%;
-    
-    }
-
-    .navID{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(143, 143, 143);
-        height: 46px;
-        margin: 20px 15px;
-        text-decoration: none;
-        transition: border-bottom 0.3s ease;
-        border: 1px solid transparent;
-    }
-
-    .flag{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        z-index: 100;
-        position: absolute;
-        top: -13px;
-        left: 55px;
-    }
-
-    .contenedorMayor{
-        height: auto;
-    }
-
-    .bienvenidaZ{
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      height: auto;
-    }
-
-    .divBienvenido{
-        width: 80%;
-        padding: 0px 0px 10px 0px;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .tituloBienv{
-        font-size: 20px;
-        margin: 15px;
-    }
-
-    .descripBienv{
-        font-size: 14px;
-        margin: 10px;
-        
-    }   
-
-    .emailP{
-        font-size: 16px;
-        padding: 15px 10px;
-        height: auto;
-        margin-top: 10px;
-
-    }
-
-    #conteIzq{
-        height: 100vh;
-        width: 60%;
-    }
-
-    .contForm{
-        height: 50%;
-      
-    }
-
-    .contenedorDerecho{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 70%;
-        height: auto;
-             
-    }
-
-    .conteMedio{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-       
-    }
-
-   
-  
-    .conteDerDetailsTeam{
-        width: 100%;
-        overflow-y: auto;
-        
-    }
-
-    .conteMedioContact{
-        display: flex;
-        flex-direction: column;
-        display: none;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .contForm{
-        height: 60%;
-        flex-direction: column;
-    }
-
-    .form{
-        width: 100%;
-    }
-
-    .inpu,.inpuTextarea{
-        width: 200px;
-    }
-
-    .formDetails{
-        width: 100%;
-    }
-
-    .contFinal{
-        display: none;
-    }
-
-    .imgContac{
-        width: 80%;
-        margin-top: 20px;
-    }
-
-    .perfil{
-        width: 90px;
-        margin-left: -35px;
-    }
-
-    .per_img{
-        width: 90px;
-    
-    }
-
-    .perfilDetail{
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 80px;
-    }
-
-    #perDescrip1, #perDescrip2, #perDescrip3,#perDescrip4, #perDescrip5, #perDescrip6{
-        padding: 0;
-        margin-left: 30px;
-               
-    }
-
-    .pdescrip{
-        width: 100%;
-    }
-
-    .contenedorDerechoSend{
-        flex-direction: column;
-    }
-   
-    .imgSend{
-        width: 100%;
-        align-items: center;
-    }
-
-    .mensEnviado{
-        font-size: 16px;
-        margin-top: 30px;
-    }
-
-    .listUl{
-        font-size: 16px;
-    }
-
-    .hSup{
-        font-size: 18px;
-    }
-
-    
-.descrip1{
-    font-size: 16px;
-    text-align: left;
-    
-}
-
-.descrip2{
-    font-size: 15px;
-    text-align: left;
-
-}
-
-.descrip3{
-    padding: 0px 5px;
-    margin-top: 15px;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
-    font-size: 16px;
-    text-align: left;
-    margin-top: 10px;
-}
-
-}
-
-@media (min-width: 350px) and (max-width: 413px) {
+     .flag{
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         z-index: 100;
+         position: absolute;
+         top: -13px;
+         left: 55px;
+        }
  
-    .menssPersonal{
-        border: 2px solid olive;
-    }
-    
-
-    .marca{
-        position: absolute;
-        left: 0px;
-        top: 6px;
-        margin-left: 0;        
-       }
-   
-    .logo{
-           width: 65px;
-       }
-   
-    .nav{
-       display: flex;
-       justify-content: flex-end;
-       align-items: flex-start;
-       margin-right: 0;
-       margin-top: 20px;
-       width: 86%;
-       }
-   
-    .navID{
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 14px;
-        color: rgb(143, 143, 143);
-        height: 46px;
-        margin: 20px 10px;
-        text-decoration: none;
-        transition: border-bottom 0.3s ease;
-        border: 1px solid transparent;
-       }
-   
-    .flag{
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        z-index: 100;
-        position: absolute;
-        top: -13px;
-        left: 55px;
-       }
-
-   
-
-    #conteIzq{
-        height: 100vh;
-        width: 55%;
-    }
-
-    .menu{
-        height: 100vh;
-    }
-
-   
-  
-    .contFinal{
-        display: none;
-    }
-
-
-    .contenedorMayor{
-        height: auto;
-    }
-
-    .contenedorDerecho{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 70%;
-        height: auto;
-       
-    }
-  
-    .conteMedio{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100vh;
-       
-    }
-
-
-    .perfil{
-        width: 80px;
-        margin-left: -35px;
-    }
-
-    .per_img{
-        width: 90px;
-    }
-
-    .perfilDetail{
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 80px;
-        font-size: 15px;
-      
-    }
-
-
-    #perDescrip1, #perDescrip2, #perDescrip3, #perDescrip4, #perDescrip5, #perDescrip6 {
-        margin-left: 20px;
-    }
-
-    .pdescrip{
-        font-size: 13px;
-    }
-
-    .zona{
-        font-size: 13px;
-    }
-
-    .imgContac{
-        width: 80%;
-        margin-top: 20px;
-    }
-    
-    .conteMedioContact{
-        width: 100%;
-    }
-    .contForm{
-        height: 60%;
-        flex-direction: column;
-     
-    }
-
-    .form{
-        width: 100%;
-    }
-
-    .formDetails{
-        width: 100%;
-       
-    }
-
-    .bienvenidaZ{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: auto;
-      }
-  
-    .divBienvenido{
-        width: 80%;
-        padding: 0px 0px 10px 0px;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-    }
-  
-    .tituloBienv{
-        font-size: 20px;
-        margin: 15px;
-    }
-  
-    .descripBienv{
-          font-size: 14px;
-          margin: 10px;
-          
-    }   
-   
-    .emailP{
-        font-size: 16px;
-        padding: 10px 8px;
-        height: auto;
-        margin-top: 10px;
-
-    }
-
-    .conteDerDetailsTeam{
-        width: 100%;
-        overflow-y: auto;
-               
-    }
-
-    .listUl{
-        font-size: 15px;
-    }
-    
-    #area{
-        font-size: 18px;
-    }
-
-    .inpu,.inpuTextarea{
-        width: 160px;
-    }
-
-    .contenedorDerechoSend{
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .imgSend{
-        width: 100%; 
-    }
-
-    .mensEnviado{
-        width: auto;
-    }
-
-    .hSup{
-        font-size: 18px;
-    }
-
-    .descrip1{
-        font-size: 16px;
-        text-align: left;
+        .consultasH1{
+         font-size: 16px;
+     }
+ 
+     .casaConsulta{
+         width: 120px;
+     }
+ 
+     #conteIzq{
+         height: 120vh;
+         width: 55%;
         
-    }
+     }
+ 
+     .menu{
+         height: 120vh;
+         
+     }
+ 
+     .conteImgArea{
+       margin-top: 30px;
+     }
+   
+     .contFinal{
+         display: none;
+     }
+ 
+ 
+     .contenedorMayor{
+         height: auto;
+     }
+ 
+     .contenedorDerecho{
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-start;
+         align-items: flex-start;
+         width: 70%;
+         height: auto;
+      
+       
+     }
+   
+     .conteMedio{
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         height: 100vh;
+        
+     }
+ 
+ 
+     .perfil{
+         width: 80px;
+         margin-left: -35px;
+     }
+ 
+     .per_img{
+         width: 90px;
+     }
+ 
+     .perfilDetail{
+         align-items: flex-start;
+         justify-content: flex-start;
+         width: 80px;
+         font-size: 15px;
+       
+     }
+ 
+ 
+     #perDescrip1, #perDescrip2, #perDescrip3, #perDescrip4, #perDescrip5, #perDescrip6 {
+         margin-left: 20px;
+     }
+ 
+     .pdescrip{
+         font-size: 13px;
+     }
+ 
+     .zona{
+         font-size: 13px;
+     }
+ 
+     .imgContac{
+         width: 80%;
+         margin-top: 20px;
+     }
+     
+     .conteMedioContact{
+         width: 100%;
+     }
+     .contForm{
+         height: 60%;
+         flex-direction: column;
+         overflow-y: auto;
+      
+     }
+ 
+     .form{
+         width: 100%;
+     }
+ 
+     .formDetails{
+         width: 100%;
+        
+     }
+ 
+     .bienvenidaZ{
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+         height: auto;
+         clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 98%, 75% 100%, 25% 100%, 0 98%, 0% 30%);
+       }
+   
+     .divBienvenido{
+         width: 80%;
+         padding: 0px 0px 10px 0px;
+         height: auto;
+         justify-content: center;
+         align-items: center;
+     }
+   
+     .tituloBienv{
+         font-size: 20px;
+         margin: 15px;
+     }
+   
+     .descripBienv{
+           font-size: 14px;
+           margin: 10px;
+           
+     }   
     
-    .descrip2{
-        font-size: 15px;
-        text-align: left;
-    
-    }
-    
-    .descrip3{
-        padding: 0px 5px;
-        margin-top: 15px;
-        font-size: 15px;
-        text-align: justify;
-  
-    }
-
-    .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
-        font-size: 16px;
-        text-align: left;
-        margin-top: 10px;
-    }
-}
+     .emailP{
+         font-size: 16px;
+         padding: 10px 8px;
+         height: auto;
+         margin-top: 10px;
+ 
+     }
+ 
+     .conteDerDetailsTeam{
+         width: 100%;
+         overflow-y: auto;
+                
+     }
+ 
+     .listUl{
+         font-size: 15px;
+     }
+     
+     #area{
+         font-size: 18px;
+     }
+ 
+     .inpu,.inpuTextarea{
+         width: 160px;
+     }
+ 
+     .contenedorDerechoSend{
+         width: 100%;
+         flex-direction: column;
+     }
+ 
+     .imgSend{
+         width: 100%; 
+     }
+ 
+     .mensEnviado{
+         width: auto;
+     }
+ 
+     .hSup{
+         font-size: 18px;
+     }
+ 
+     .descrip1{
+         font-size: 16px;
+         text-align: left;
+         
+     }
+     
+     .descrip2{
+         font-size: 15px;
+         text-align: left;
+     
+     }
+     
+     .descrip3{
+         padding: 0px 5px;
+         margin-top: 15px;
+         font-size: 15px;
+         text-align: justify;
+   
+     }
+ 
+     .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8, .materia9, .materia10 {
+         font-size: 16px;
+         text-align: left;
+         margin-top: 10px;
+     }
+ }

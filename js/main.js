@@ -71,6 +71,7 @@ function loadContac(){
 
 function civil(){
    area = document.getElementById('area').innerHTML = matriz[0].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_civil;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_civil;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_civil;
@@ -97,6 +98,7 @@ function civil(){
 
 function penal(){
    area = document.getElementById('area').innerHTML = matriz[1].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_penal;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_penal;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_penal;
@@ -121,8 +123,9 @@ function penal(){
 }
 
 function agrario(){
-   console.log(matriz[2])
+
    area = document.getElementById('area').innerHTML = matriz[2].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_agrar;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_agrar;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_agrar;
@@ -148,8 +151,9 @@ function agrario(){
 }
 
 function tributario(){
-   console.log(matriz[3])
+  
    area = document.getElementById('area').innerHTML = matriz[3].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_tribu;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_tribu;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_tribu;
@@ -176,8 +180,9 @@ function tributario(){
 
 
 function inmobiliario(){
-   console.log(matriz[4])
+   
    area = document.getElementById('area').innerHTML = matriz[4].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_inqui;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_inqui;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_inqui;
@@ -203,8 +208,9 @@ function inmobiliario(){
 }
 
 function proteccion(){
-   console.log(matriz[5])
+  
    area = document.getElementById('area').innerHTML = matriz[5].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_protf;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_protf;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_protf;
@@ -230,8 +236,9 @@ function proteccion(){
 }
 
 function marytierra(){
-   console.log(matriz[6])
+ 
    area = document.getElementById('area').innerHTML = matriz[6].area;
+   document.querySelector(".conteImgArea").style.cssText = 'display : none';
    descrip1 = document.getElementById('descrip1').innerHTML = descrip1_mayti;
    descrip2 = document.getElementById('descrip2').innerHTML = descrip2_mayti;
    descrip3 = document.getElementById('descrip3').innerHTML = descrip3_mayti;
@@ -627,7 +634,7 @@ let januMens = 'Hola, soy Janury BabincZuk, por favor escribe de forma general l
 let celeMens = 'Hola, soy Celesvina Indriago, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
 let moreMens = 'Hola, soy Jose Argenis Moreno, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
 let joseMens = 'Hola, soy Jose Enrique Bianchi, hazme una breve reseña de tu causa en la fase que se encuentre tanto como : prepraratoria, juicio o ejecución. Gustosamente te atendere procurando brindar el mejor asesoramiento. '
-let ybraMens = 'Hola, soy Ybrahin Ibarra, por favor escribe de forma general la situacion o tu pregunta, que en breve te respondere. soy especialista en constitucion de empresas y defensa de derechos humanos. '
+let ybraMens = 'Hola; soy Ybrahin  Ybarra,  Abogado y Contador Público,  Especialista en Tributos, gracias por escribirme;   por favor formule su pregunta o requerimiento que a la brevedad le estaré contactando para orientarte y ofrecerle soluciones efectivas a su problema. '
 let admiMens = 'Hola, soy el administrador del sitio, si deseas aparecer en legalz.link debes ser abogado legalmente licenciado en el territorio venezolano y aceptar las politicas del sitio.'
 
 const msnGeneral = 'Al ingresar los datos (nombre y correo) y hacer clic en el botón "Enviar", usted proporciona su firma electrónica y su consentimiento para que el abogado pueda comunicarse con usted, proporcionandole información para el desarrollo de su defensa o caso.'
